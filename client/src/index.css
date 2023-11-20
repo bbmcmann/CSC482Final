@@ -1,0 +1,9 @@
+html {
+  --tw-bg-opacity: 1;
+  background-color: rgba(52, 53, 65, var(--tw-bg-opacity));
+  color: #fdfdfd;
+  font: 400 16px/1.5 "Roboto", sans-serif;
+}
+.body {
+  margin: 0;
+}
