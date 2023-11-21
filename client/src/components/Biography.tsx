@@ -1,12 +1,8 @@
-export default function Biography() {
+export default function Biography({ bio }: { bio: string }) {
   return (
-    <div>
+    <div className="bio">
       <h3>Biography</h3>
-      <p>
-        I am a student at the Cal Poly SLO, studying Computer Science. I am
-        interested in a wide variety of topics, including but not limited to:
-        web development, machine learning, and natural language processing.
-      </p>
+      <p>{bio}</p>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { StyleSheet } from "@react-pdf/renderer";
 export const variant1 = StyleSheet.create({
   viewer: {
     width: "60vw",
-    height: window.innerHeight,
+    height: "800px",
   },
   page: {
     flexDirection: "row",
