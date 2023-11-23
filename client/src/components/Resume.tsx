@@ -1,4 +1,11 @@
-import { Document, PDFViewer, Page, Text, View } from "@react-pdf/renderer";
+import {
+  Document,
+  Link,
+  PDFViewer,
+  Page,
+  Text,
+  View,
+} from "@react-pdf/renderer";
 import { variant1 } from "./resumeStyles";
 
 export type ResumeProps = {
@@ -28,7 +35,7 @@ export type ResumeProps = {
     role: string;
     start: string;
     end: string;
-    description: string;
+    description: string[];
   }[];
   skills: string[];
 };
@@ -42,13 +49,105 @@ export default function Resume(props: ResumeProps) {
     <div>
       <h3>Resume</h3>
       <PDFViewer style={styles.viewer}>
-        <Document>
+        <Document title={`${props.name} Resume`}>
           <Page size="A4" style={styles.page}>
-            <View style={styles.section}>
-              <Text>Section #1</Text>
+            <View style={styles.header}>
+              <Text style={styles.name}>{props.name}</Text>
+              <View style={styles.headerline}>
+                <Text style={styles.contact}>
+                  <Link src="https://www.google.com/">{props.email}</Link>
+                </Text>
+                <Text style={styles.contact}>{props.phone}</Text>
+                <Text style={styles.contact}>
+                  <Link src="https://www.google.com/">{props.linkedin}</Link>
+                </Text>
+              </View>
             </View>
             <View style={styles.section}>
-              <Text>Section #2</Text>
+              <Text style={styles.sectionTitle}>Education</Text>
+              <View style={styles.sectionContent}>
+                <View style={styles.rowPrim}>
+                  <Text style={styles.sectionContentText}>
+                    {props.education.school}
+                  </Text>
+                  <Text style={styles.sectionContentText}>
+                    {props.education.location}
+                  </Text>
+                </View>
+                <View style={styles.rowSec}>
+                  <Text style={styles.sectionContentText}>
+                    {props.education.degree}
+                  </Text>
+                  <Text style={styles.sectionContentText}>
+                    {props.education.start} - {props.education.end}
+                  </Text>
+                </View>
+                <Text style={styles.sectionContentText}>
+                  GPA: {props.education.gpa}
+                </Text>
+                <Text style={styles.sectionContentText}>
+                  Relevant Courses: {props.education.courses.join(", ")}
+                </Text>
+              </View>
+            </View>
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Experience</Text>
+              <View style={styles.sectionContent}>
+                {props.experience.map((exp) => (
+                  <View style={styles.experienceSection}>
+                    <View style={styles.rowPrim}>
+                      <Text style={styles.sectionContentText}>
+                        {exp.company}
+                      </Text>
+                      <Text style={styles.sectionContentText}>
+                        {exp.location}
+                      </Text>
+                    </View>
+                    <View style={styles.rowSec}>
+                      <Text style={styles.sectionContentText}>
+                        {exp.position}
+                      </Text>
+                      <Text style={styles.sectionContentText}>
+                        {exp.start} - {exp.end}
+                      </Text>
+                    </View>
+                    {exp.description.map((desc) => (
+                      <Text style={styles.bulletPoint}>• {desc}</Text>
+                    ))}
+                  </View>
+                ))}
+              </View>
+            </View>
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>
+                Projects/Outside Experience
+              </Text>
+              <View style={styles.sectionContent}>
+                {props.projects.map((proj) => (
+                  <View style={styles.experienceSection}>
+                    <View style={styles.rowPrim}>
+                      <Text style={styles.sectionContentText}>{proj.name}</Text>
+                    </View>
+                    <View style={styles.rowSec}>
+                      <Text style={styles.sectionContentText}>{proj.role}</Text>
+                      <Text style={styles.sectionContentText}>
+                        {proj.start} - {proj.end}
+                      </Text>
+                    </View>
+                    {proj.description.map((desc) => (
+                      <Text style={styles.bulletPoint}>• {desc}</Text>
+                    ))}
+                  </View>
+                ))}
+              </View>
+            </View>
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Skills</Text>
+              <View style={styles.sectionContent}>
+                <Text style={styles.sectionContentText}>
+                  {props.skills.join(", ")}
+                </Text>
+              </View>
             </View>
           </Page>
         </Document>

@@ -68,14 +68,21 @@ def generateStudent():
               'role': "Creator",
               'start': "September 2021",
               'end': "Present",
-              'description': "Created an artificial CSC student",
+              'description': ["Created an artificial CSC student", "Used Python"],
             },
             {
               'name': "Artificial CSC Student",
               'role': "Creator",
               'start': "September 2021",
               'end': "Present",
-              'description': "Created an artificial CSC student",
+              'description': ["Created an artificial CSC student", "Used Python", "Used React"],
+            },
+            {
+              'name': "Artificial CSC Student",
+              'role': "Creator",
+              'start': "September 2021",
+              'end': "Present",
+              'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
             },
           ],
           'skills': [
