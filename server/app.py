@@ -1,3 +1,4 @@
+import header
 from flask import Flask
 from flask_cors import CORS, cross_origin
 
@@ -10,15 +11,17 @@ def hello_world():
 
 @app.route("/generate")
 def generateStudent():
+    genHeader = header.getHeader()
+
     return {
         'bio': '''I am a student at the Cal Poly SLO, studying Computer Science. I am
               interested in a wide variety of topics, including but not limited to:
               web development, machine learning, and natural language processing.''',
         'resume': {
-          'name': "Jo Mama",
-          'email': "jomama@gmail.com",
-          'phone': "555-555-5555",
-          'linkedin': "linkedin.com/in/jomama",
+          'name': genHeader['name'],
+          'email': genHeader['email'],
+          'phone': genHeader['phone'],
+          'linkedin': genHeader['linkedin'],
           'education': {
             'school': "California Polytechnic State University, San Luis Obispo",
             'location': "San Luis Obispo, CA",
