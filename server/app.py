@@ -1,4 +1,8 @@
 import header
+import os
+import sys
+cwd = os.getcwd()
+sys.path.append(cwd + '/../')
 from data import generate_basic
 from flask import Flask
 from flask_cors import CORS, cross_origin
@@ -13,7 +17,7 @@ def hello_world():
 @app.route("/generate")
 def generateStudent():
     genHeader = header.getHeader()
-
+    start, end = generate_basic.get_years()
     return {
         'bio': '''I am a student at the Cal Poly SLO, studying Computer Science. I am
               interested in a wide variety of topics, including but not limited to:
@@ -28,8 +32,8 @@ def generateStudent():
             'location': "San Luis Obispo, CA",
             'degree': "Bachelor of Science, Computer Science",
             'gpa': generate_basic.generate_gpa(),
-            'start': "September 2018",
-            'end': "June 2022",
+            'start': start,
+            'end': end,
             'courses': [
               "Data Structures and Algorithms",
               "Systems Programming",
