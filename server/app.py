@@ -1,4 +1,5 @@
 import header
+from data import generate_basic
 from flask import Flask
 from flask_cors import CORS, cross_origin
 
@@ -26,7 +27,7 @@ def generateStudent():
             'school': "California Polytechnic State University, San Luis Obispo",
             'location': "San Luis Obispo, CA",
             'degree': "Bachelor of Science, Computer Science",
-            'gpa': 3.5,
+            'gpa': generate_basic.generate_gpa(),
             'start': "September 2018",
             'end': "June 2022",
             'courses': [
