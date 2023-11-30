@@ -3,20 +3,34 @@ from flask import Flask
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-cors = CORS(app)
+cors = CORS(app, resources = {"/": {"origins": "http://localhost:5178/"}})
 
 @app.route("/")
 def hello_world():
     return {"message": "Hello World!"}
 
 @app.route("/generate")
+@cross_origin()
 def generateStudent():
     genHeader = header.getHeader()
+    skills = [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Go",
+            "HTML",
+            "CSS",
+            "SQL",
+            "Git",
+          ]
+    genBio = bio.get_bio(genHeader['name'], skills)
+    
 
     return {
-        'bio': '''I am a student at the Cal Poly SLO, studying Computer Science. I am
-              interested in a wide variety of topics, including but not limited to:
-              web development, machine learning, and natural language processing.''',
+        'bio': genBio,
         'resume': {
           'name': genHeader['name'],
           'email': genHeader['email'],
