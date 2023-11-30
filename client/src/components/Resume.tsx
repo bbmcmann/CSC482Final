@@ -44,7 +44,6 @@ export default function Resume(props: ResumeProps) {
   // TODO: Add a button to switch between variants
   const styles = variant1;
 
-  console.log(props);
   return (
     <div>
       <h3>Resume</h3>
@@ -94,7 +93,10 @@ export default function Resume(props: ResumeProps) {
               <Text style={styles.sectionTitle}>Experience</Text>
               <View style={styles.sectionContent}>
                 {props.experience.map((exp) => (
-                  <View style={styles.experienceSection}>
+                  <View
+                    key={exp.company + exp.start}
+                    style={styles.experienceSection}
+                  >
                     <View style={styles.rowPrim}>
                       <Text style={styles.sectionContentText}>
                         {exp.company}
@@ -111,8 +113,10 @@ export default function Resume(props: ResumeProps) {
                         {exp.start} - {exp.end}
                       </Text>
                     </View>
-                    {exp.description.map((desc) => (
-                      <Text style={styles.bulletPoint}>• {desc}</Text>
+                    {exp.description.map((desc, i) => (
+                      <Text key={i} style={styles.bulletPoint}>
+                        • {desc}
+                      </Text>
                     ))}
                   </View>
                 ))}
@@ -124,7 +128,7 @@ export default function Resume(props: ResumeProps) {
               </Text>
               <View style={styles.sectionContent}>
                 {props.projects.map((proj) => (
-                  <View style={styles.experienceSection}>
+                  <View key={proj.role} style={styles.experienceSection}>
                     <View style={styles.rowPrim}>
                       <Text style={styles.sectionContentText}>{proj.name}</Text>
                     </View>
@@ -134,8 +138,10 @@ export default function Resume(props: ResumeProps) {
                         {proj.start} - {proj.end}
                       </Text>
                     </View>
-                    {proj.description.map((desc) => (
-                      <Text style={styles.bulletPoint}>• {desc}</Text>
+                    {proj.description.map((desc, i) => (
+                      <Text key={i} style={styles.bulletPoint}>
+                        • {desc}
+                      </Text>
                     ))}
                   </View>
                 ))}
