@@ -1,4 +1,5 @@
 import header
+import bio
 from flask import Flask
 from flask_cors import CORS, cross_origin
 
@@ -26,7 +27,8 @@ def generateStudent():
             "SQL",
             "Git",
           ]
-    genBio = bio.get_bio(genHeader['name'], skills)
+    end = "September 2021"
+    genBio = bio.get_bio(genHeader['name'], skills, end)
     
 
     return {

@@ -1,7 +1,7 @@
 import random
 import random
 
-def get_bio(input_name, skills):
+def get_bio(input_name, skills, input_end):
     # Read the bio.txt file
     with open('/Users/kellybecker/Desktop/NLP/CSC482Final/data/bio.txt', 'r') as file:
         bios = file.readlines()
@@ -13,8 +13,9 @@ def get_bio(input_name, skills):
     adjectives = get_adjectives()
 
     # Substitute fields in the bio string
-    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], skill1 = skills[0], skill2 = skills[1])
+    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], skill1 = skills[0], skill2 = skills[1], skill3 = skills[3], end = input_end)
 
+    print(formatted_bio)
     return formatted_bio
 
 def get_adjectives():
@@ -44,4 +45,5 @@ if __name__ == "__main__":
             "SQL",
             "Git",
           ]
-    print(get_bio('John Doe', skills))
+    end = "September 2021"
+    get_bio('John Doe', skills, end)

@@ -9,7 +9,10 @@ function App() {
   const [resume, setResume] = useState<ResumeProps | undefined>();
 
   const onClick = async () => {
-    const response = await fetch("http://localhost:5000/generate");
+    const response = await fetch("http://localhost:5000/generate", {
+      method: "get",
+      mode: "cors",
+    });
     const data = await response.json();
     setBio(data.bio);
     setResume(data.resume);
