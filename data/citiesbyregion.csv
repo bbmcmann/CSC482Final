@@ -1,0 +1,39 @@
+Region,City,Pop,Area Code
+SF Bay Area,San Jose,"1,013,240",408
+SF Bay Area,San Francisco,"873,965",415
+SF Bay Area,Oakland,"440,646",510
+LA Area,Los Angeles,"3,898,747",213
+LA Area,Long Beach,"466,742",562
+LA Area,Santa Clarita,"228,673",661
+San Diego,San Diego,"1,423,851",619
+San Diego,Oceanside,"175,742",760
+San Diego,Carlsbad,"115,382",760
+Sacramento,Sacramento,"500,930",916
+Sacramento,Roseville,"151,901",916
+Sacramento,Stockton,"322,120",209
+Central Coast,Oxnard,"202,063",805
+Central Coast,Thousand Oaks,"126,966",805
+Central Coast,Santa Barbara,"88,665",805
+Central Coast,San Luis Obispo,"47,063",805
+San Joaquin Valley,Fresno,"542,107",559
+San Joaquin Valley,Bakersfield,"403,455",661
+San Joaquin Valley,Modesto,"218,464",209
+Other CA,Anaheim,"344,461",714
+Other CA,Irvine,"313,685",949
+Other CA,San Bernardino,"220,328",909
+Colorado,Denver,"713,252",303
+Colorado,Colorado Springs,"486,248",719
+Colorado,Boulder,"105,485",720
+Washington,Seattle,"737,015",206
+Washington,Spokane,"228,989",509
+Washington,Tacoma,"219,346",253
+Oregon,Portland,"652,503",503
+Oregon,Eugene,"176,654",541
+Oregon,Bend,"99,178",541
+Texas,Houston,"2,302,878",713
+Texas,San Antonio,"1,472,909",210
+Texas,Dallas,"1,299,544",214
+Hawaii,Honolulu,"350,964",808
+Other US,Phoenix,"1,644,409",602
+Other US,Boise,"237,446",208
+Other US,Salt Lake City,"200,478",801

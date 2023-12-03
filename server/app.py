@@ -1,4 +1,9 @@
 import header
+import os
+import sys
+cwd = os.getcwd()
+sys.path.append(cwd + '/../')
+from data import generate_basic
 import bio
 from flask import Flask
 from flask_cors import CORS, cross_origin
@@ -13,7 +18,13 @@ def hello_world():
 @app.route("/generate")
 @cross_origin()
 def generateStudent():
-    genHeader = header.getHeader()
+    home_region = generate_basic.get_home_region()
+    homecity = generate_basic.get_home_city(home_region)
+    areacode = generate_basic.get_area_code(homecity)
+    genHeader = header.getHeader(areacode)
+    start, end = generate_basic.get_years()
+    spanishfluent = generate_basic.get_spanish_fluent()
+    
     skills = [
             "Python",
             "Java",
@@ -27,7 +38,8 @@ def generateStudent():
             "SQL",
             "Git",
           ]
-    end = "September 2021"
+    if spanishfluent:
+        skills.append('Fluent in Spanish')
     genBio = bio.get_bio(genHeader['name'], skills, end)
     
 
@@ -42,9 +54,9 @@ def generateStudent():
             'school': "California Polytechnic State University, San Luis Obispo",
             'location': "San Luis Obispo, CA",
             'degree': "Bachelor of Science, Computer Science",
-            'gpa': 3.5,
-            'start': "September 2018",
-            'end': "June 2022",
+            'gpa': generate_basic.generate_gpa(),
+            'start': start,
+            'end': end,
             'courses': [
               "Data Structures and Algorithms",
               "Systems Programming",
@@ -104,18 +116,6 @@ def generateStudent():
               'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
             },
           ],
-          'skills': [
-            "Python",
-            "Java",
-            "C++",
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Go",
-            "HTML",
-            "CSS",
-            "SQL",
-            "Git",
-          ],
+          'skills': skills
         }
       }
