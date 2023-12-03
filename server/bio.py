@@ -1,9 +1,10 @@
 import random
-import random
+import os
+
 
 def get_bio(input_name, skills, input_end):
     # Read the bio.txt file
-    with open('/Users/kellybecker/Desktop/NLP/CSC482Final/data/bio.txt', 'r') as file:
+    with open(os.getcwd() + '/../data/bio.txt', 'r') as file:
         bios = file.readlines()
 
     # Select a random bio
@@ -21,7 +22,7 @@ def get_bio(input_name, skills, input_end):
 def get_adjectives():
 
     # Read the adjectives.txt file
-    with open('/Users/kellybecker/Desktop/NLP/CSC482Final/data/adjectives.txt', 'r') as file:
+    with open(os.getcwd() + '/../data/adjectives.txt', 'r') as file:
         adjectives = file.readlines()
 
     # Remove newline characters and select 5 random adjectives
