@@ -16,12 +16,33 @@ def hello_world():
 
 @app.route("/generate")
 def generateStudent():
-    genHeader = header.getHeader()
+    home_region = generate_basic.get_home_region()
+    homecity = generate_basic.get_home_city(home_region)
+    areacode = generate_basic.get_area_code(homecity)
+    genHeader = header.getHeader(areacode)
     start, end = generate_basic.get_years()
+    spanishfluent = generate_basic.get_spanish_fluent()
+    
+    skills = [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Go",
+            "HTML",
+            "CSS",
+            "SQL",
+            "Git",
+          ]
+    if spanishfluent:
+        skills.append('Fluent in Spanish')
+    
     return {
-        'bio': '''I am a student at the Cal Poly SLO, studying Computer Science. I am
+        'bio': '''I am a student at the Cal Poly SLO from {}, studying Computer Science. I am
               interested in a wide variety of topics, including but not limited to:
-              web development, machine learning, and natural language processing.''',
+              web development, machine learning, and natural language processing.'''.format(homecity),
         'resume': {
           'name': genHeader['name'],
           'email': genHeader['email'],
@@ -93,18 +114,6 @@ def generateStudent():
               'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
             },
           ],
-          'skills': [
-            "Python",
-            "Java",
-            "C++",
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Go",
-            "HTML",
-            "CSS",
-            "SQL",
-            "Git",
-          ],
+          'skills': skills
         }
       }
