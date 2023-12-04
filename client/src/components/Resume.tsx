@@ -81,9 +81,11 @@ export default function Resume(props: ResumeProps) {
                     {props.education.start} - {props.education.end}
                   </Text>
                 </View>
-                <Text style={styles.sectionContentText}>
-                  GPA: {props.education.gpa}
-                </Text>
+                {props.education.gpa > 3.0 ? (
+                  <Text style={styles.sectionContentText}>
+                    GPA: {props.education.gpa}
+                  </Text>
+                ) : null}
                 <Text style={styles.sectionContentText}>
                   Relevant Courses: {props.education.courses.join(", ")}
                 </Text>
