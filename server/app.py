@@ -1,3 +1,4 @@
+import courses
 import header
 from flask import Flask
 from flask_cors import CORS, cross_origin
@@ -29,15 +30,7 @@ def generateStudent():
             'gpa': 3.5,
             'start': "September 2018",
             'end': "June 2022",
-            'courses': [
-              "Data Structures and Algorithms",
-              "Systems Programming",
-              "Computer Architecture and Assembly Language",
-              "Operating Systems",
-              "Artificial Intelligence",
-              "Natural Language Processing",
-              "Machine Learning",
-            ],
+            'courses': courses.getCourses(4),
           },
           'experience': [
             {
