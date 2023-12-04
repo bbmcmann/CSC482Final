@@ -1,23 +1,56 @@
+import os
+import random
+import sys
+
 import courses
 import header
+
+cwd = os.getcwd()
+sys.path.append(cwd + '/../')
+import bio
 from flask import Flask
 from flask_cors import CORS, cross_origin
 
+from data import generate_basic
+
 app = Flask(__name__)
-cors = CORS(app)
+cors = CORS(app, resources = {"/": {"origins": "http://localhost:5178/"}})
 
 @app.route("/")
 def hello_world():
     return {"message": "Hello World!"}
 
 @app.route("/generate")
+@cross_origin()
 def generateStudent():
-    genHeader = header.getHeader()
+    home_region = generate_basic.get_home_region()
+    homecity = generate_basic.get_home_city(home_region)
+    areacode = generate_basic.get_area_code(homecity)
+    genHeader = header.getHeader(areacode)
+    start, end = generate_basic.get_years()
+    year = random.randint(1, 5)
+    spanishfluent = generate_basic.get_spanish_fluent()
+    
+    skills = [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Go",
+            "HTML",
+            "CSS",
+            "SQL",
+            "Git",
+          ]
+    if spanishfluent:
+        skills.append('Fluent in Spanish')
+    genBio = bio.get_bio(genHeader['name'], skills, end)
+    
 
     return {
-        'bio': '''I am a student at the Cal Poly SLO, studying Computer Science. I am
-              interested in a wide variety of topics, including but not limited to:
-              web development, machine learning, and natural language processing.''',
+        'bio': genBio,
         'resume': {
           'name': genHeader['name'],
           'email': genHeader['email'],
@@ -27,10 +60,10 @@ def generateStudent():
             'school': "California Polytechnic State University, San Luis Obispo",
             'location': "San Luis Obispo, CA",
             'degree': "Bachelor of Science, Computer Science",
-            'gpa': 3.5,
-            'start': "September 2018",
-            'end': "June 2022",
-            'courses': courses.getCourses(4),
+            'gpa': generate_basic.generate_gpa(),
+            'start': start,
+            'end': end,
+            'courses': courses.getCourses(year),
           },
           'experience': [
             {
@@ -81,18 +114,6 @@ def generateStudent():
               'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
             },
           ],
-          'skills': [
-            "Python",
-            "Java",
-            "C++",
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Go",
-            "HTML",
-            "CSS",
-            "SQL",
-            "Git",
-          ],
+          'skills': skills
         }
       }

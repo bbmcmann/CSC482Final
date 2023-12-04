@@ -9,11 +9,11 @@ lastfile = open('../data/lastnames.txt', 'r')
 lastnames = lastfile.readlines()
 
 
-def getHeader():
+def getHeader(area_code):
   '''Get the header data for the resume. Returns dictionary with name, email, phone, and linkedin url'''
   name = getRandomName()
   email = getEmail(name)
-  phone = getPhone()
+  phone = getPhone(area_code)
   linkedin = getLinkedIn(name)
   return {
     'name': name,
@@ -34,9 +34,9 @@ def getEmail(name):
   domains = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com", '@calpoly.edu']
   return name.lower().replace(" ", "") + random.choice(domains)
 
-def getPhone():
+def getPhone(area_code):
   '''Get a random phone number. Returns string with phone number'''
-  return str(random.randint(100, 999)) + "-" + str(random.randint(100, 999)) + "-" + str(random.randint(1000, 9999))
+  return str(area_code) + "-" + str(random.randint(100, 999)) + "-" + str(random.randint(1000, 9999))
 
 def getLinkedIn(name):
   '''Get a linkedin url based on the name. Returns string with linkedin url'''
