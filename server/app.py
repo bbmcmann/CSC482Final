@@ -46,7 +46,7 @@ def generateStudent():
           ]
     if spanishfluent:
         skills.append('Fluent in Spanish')
-    genBio = bio.get_bio(genHeader['name'], skills, end)
+    genBio = bio.get_bio(genHeader['name'], skills, end, year)
     
 
     return {

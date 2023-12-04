@@ -2,7 +2,7 @@ import random
 import os
 
 
-def get_bio(input_name, skills, input_end):
+def get_bio(input_name, skills, input_end, input_year):
     # Read the bio.txt file
     with open(os.getcwd() + '/../data/bio.txt', 'r') as file:
         bios = file.readlines()
@@ -14,7 +14,7 @@ def get_bio(input_name, skills, input_end):
     adjectives = get_adjectives()
 
     # Substitute fields in the bio string
-    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], skill1 = skills[0], skill2 = skills[1], skill3 = skills[3], end = input_end)
+    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], skill1 = skills[0], skill2 = skills[1], skill3 = skills[3], end = input_end, year = get_formatted_year(input_year))
 
     print(formatted_bio)
     return formatted_bio
@@ -30,6 +30,11 @@ def get_adjectives():
     selected_adjectives = [adj.strip() for adj in selected_adjectives]
 
     return selected_adjectives
+
+def get_formatted_year(year):
+    # Get formatted school year
+    year_endings = {1: 'st', 2: 'nd', 3: 'rd', 4: 'th', 5: 'th'}
+    return str(year) + year_endings[year]
 
 
 if __name__ == "__main__":
@@ -47,4 +52,5 @@ if __name__ == "__main__":
             "Git",
           ]
     end = "September 2021"
-    get_bio('John Doe', skills, end)
+    year = random.randint(1, 5)
+    get_bio('John Doe', skills, end, year)
