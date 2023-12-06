@@ -29,24 +29,23 @@ def generateStudent():
     genHeader = header.getHeader(areacode)
     start, end = generate_basic.get_years()
     year = random.randint(1, 5)
-    spanishfluent = generate_basic.get_spanish_fluent()
-    
-    skills = [
+    skills = {
+        "languages": [
             "Python",
             "Java",
             "C++",
             "JavaScript",
             "TypeScript",
+          ],
+        "tools": [
             "React",
             "Go",
-            "HTML",
-            "CSS",
-            "SQL",
             "Git",
-          ]
-    if spanishfluent:
-        skills.append('Fluent in Spanish')
-    genBio = bio.get_bio(genHeader['name'], skills, end, year)
+            "AWS",
+          ],
+    }
+    # genBio = bio.get_bio(genHeader['name'], skills, end, year)
+    genBio = "DELETE LATER"
     
 
     return {
