@@ -7,7 +7,7 @@ import {
   Text,
   View,
 } from "@react-pdf/renderer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getVariantStd } from "./resumeStyles";
 
 export type ResumeProps = {
@@ -56,6 +56,10 @@ export default function Resume(props: ResumeProps) {
   const onClick = () => {
     setStyles(getVariantStd());
   };
+
+  useEffect(() => {
+    setStyles(getVariantStd());
+  }, [props]);
 
   return (
     <div>

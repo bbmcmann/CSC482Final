@@ -44,8 +44,7 @@ def generateStudent():
             "AWS",
           ],
     }
-    # genBio = bio.get_bio(genHeader['name'], skills, end, year)
-    genBio = "DELETE LATER"
+    genBio = bio.get_bio(genHeader['name'], skills, end, year)
     
 
     return {
