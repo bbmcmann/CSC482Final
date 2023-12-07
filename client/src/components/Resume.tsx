@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import {
   Document,
   Link,
@@ -6,7 +7,8 @@ import {
   Text,
   View,
 } from "@react-pdf/renderer";
-import { variant1 } from "./resumeStyles";
+import { useEffect, useState } from "react";
+import { getVariantStd } from "./resumeStyles";
 
 export type ResumeProps = {
   name: string;
@@ -37,86 +39,107 @@ export type ResumeProps = {
     end: string;
     description: string[];
   }[];
-  skills: string[];
+  skills: {
+    languages: string[];
+    tools: string[];
+  };
 };
 
+/*
+- switch to 2 column layout
+order of sections matter
+first years probably have experience in bottom
+*/
 export default function Resume(props: ResumeProps) {
-  // TODO: Add a button to switch between variants
-  const styles = variant1;
+  const [styles, setStyles] = useState(getVariantStd());
+
+  const onClick = () => {
+    setStyles(getVariantStd());
+  };
+
+  useEffect(() => {
+    setStyles(getVariantStd());
+  }, [props]);
 
   return (
     <div>
       <h3>Resume</h3>
-      <PDFViewer style={styles.viewer}>
+      <Button variant="contained" onClick={onClick} sx={{ marginBottom: 2 }}>
+        Randomize Style
+      </Button>
+      <PDFViewer style={styles?.viewer}>
         <Document title={`${props.name} Resume`}>
-          <Page size="A4" style={styles.page}>
-            <View style={styles.header}>
-              <Text style={styles.name}>{props.name}</Text>
-              <View style={styles.headerline}>
-                <Text style={styles.contact}>
+          <Page size="A4" style={styles?.page}>
+            {/* HEADER SECTION */}
+            <View style={styles?.header}>
+              <Text style={styles?.name}>{props.name}</Text>
+              <View style={styles?.headerline}>
+                <Text style={styles?.contact}>
                   <Link src="https://www.google.com/">{props.email}</Link>
                 </Text>
-                <Text style={styles.contact}>{props.phone}</Text>
-                <Text style={styles.contact}>
+                <Text style={styles?.contact}>{props.phone}</Text>
+                <Text style={styles?.contact}>
                   <Link src="https://www.google.com/">{props.linkedin}</Link>
                 </Text>
               </View>
             </View>
-            <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Education</Text>
-              <View style={styles.sectionContent}>
-                <View style={styles.rowPrim}>
-                  <Text style={styles.sectionContentText}>
+            {/* EDUCATION SECTION */}
+            <View style={styles?.section}>
+              <Text style={styles?.sectionTitle}>Education</Text>
+              <View style={styles?.sectionContent}>
+                <View style={styles?.rowPrim}>
+                  <Text style={styles?.sectionSubTitle}>
                     {props.education.school}
                   </Text>
-                  <Text style={styles.sectionContentText}>
+                  <Text style={styles?.sectionContentText}>
                     {props.education.location}
                   </Text>
                 </View>
-                <View style={styles.rowSec}>
-                  <Text style={styles.sectionContentText}>
+                <View style={styles?.rowSec}>
+                  <Text style={styles?.sectionContentText}>
                     {props.education.degree}
                   </Text>
-                  <Text style={styles.sectionContentText}>
+                  <Text style={styles?.sectionContentText}>
                     {props.education.start} - {props.education.end}
                   </Text>
                 </View>
                 {props.education.gpa > 3.0 ? (
-                  <Text style={styles.sectionContentText}>
+                  <Text style={styles?.sectionContentText}>
                     GPA: {props.education.gpa}
                   </Text>
                 ) : null}
-                <Text style={styles.sectionContentText}>
+                <Text style={styles?.sectionContentText}>
                   Relevant Courses: {props.education.courses.join(", ")}
                 </Text>
               </View>
             </View>
-            <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Experience</Text>
-              <View style={styles.sectionContent}>
+            {/* EXPERIENCE SECTION */}
+            <View style={styles?.section}>
+              <Text style={styles?.sectionTitle}>Experience</Text>
+              <View style={styles?.sectionContent}>
                 {props.experience.map((exp) => (
                   <View
                     key={exp.company + exp.start}
-                    style={styles.experienceSection}
+                    style={styles?.experienceSection}
                   >
-                    <View style={styles.rowPrim}>
-                      <Text style={styles.sectionContentText}>
-                        {exp.company}
+                    <View style={styles?.rowPrim}>
+                      <Text style={styles?.sectionSubTitle}>
+                        {exp.position}
                       </Text>
-                      <Text style={styles.sectionContentText}>
+                      <Text style={styles?.sectionContentText}>
                         {exp.location}
                       </Text>
                     </View>
-                    <View style={styles.rowSec}>
-                      <Text style={styles.sectionContentText}>
-                        {exp.position}
+                    <View style={styles?.rowSec}>
+                      <Text style={styles?.sectionContentText}>
+                        {exp.company}
                       </Text>
-                      <Text style={styles.sectionContentText}>
+                      <Text style={styles?.sectionContentText}>
                         {exp.start} - {exp.end}
                       </Text>
                     </View>
                     {exp.description.map((desc, i) => (
-                      <Text key={i} style={styles.bulletPoint}>
+                      <Text key={i} style={styles?.bulletPoint}>
                         • {desc}
                       </Text>
                     ))}
@@ -124,24 +147,29 @@ export default function Resume(props: ResumeProps) {
                 ))}
               </View>
             </View>
-            <View style={styles.section}>
-              <Text style={styles.sectionTitle}>
+            {/* PROJECTS/OUTSIDE EXPERIENCE SECTION */}
+            <View style={styles?.section}>
+              <Text style={styles?.sectionTitle}>
                 Projects/Outside Experience
               </Text>
-              <View style={styles.sectionContent}>
+              <View style={styles?.sectionContent}>
                 {props.projects.map((proj) => (
-                  <View key={proj.role} style={styles.experienceSection}>
-                    <View style={styles.rowPrim}>
-                      <Text style={styles.sectionContentText}>{proj.name}</Text>
-                    </View>
-                    <View style={styles.rowSec}>
-                      <Text style={styles.sectionContentText}>{proj.role}</Text>
-                      <Text style={styles.sectionContentText}>
+                  <View key={proj.role} style={styles?.experienceSection}>
+                    <View style={styles?.rowPrim}>
+                      <Text style={styles?.sectionSubTitle}>{proj.name}</Text>
+                      <Text style={styles?.sectionContentText}>
                         {proj.start} - {proj.end}
                       </Text>
                     </View>
+                    {proj.role && (
+                      <View style={styles?.rowSec}>
+                        <Text style={styles?.sectionContentText}>
+                          {proj.role}
+                        </Text>
+                      </View>
+                    )}
                     {proj.description.map((desc, i) => (
-                      <Text key={i} style={styles.bulletPoint}>
+                      <Text key={i} style={styles?.bulletPoint}>
                         • {desc}
                       </Text>
                     ))}
@@ -149,11 +177,21 @@ export default function Resume(props: ResumeProps) {
                 ))}
               </View>
             </View>
-            <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Skills</Text>
-              <View style={styles.sectionContent}>
-                <Text style={styles.sectionContentText}>
-                  {props.skills.join(", ")}
+            {/* SKILLS SECTION */}
+            <View style={styles?.section}>
+              <Text style={styles?.sectionTitle}>Skills</Text>
+              <View style={styles?.sectionContent}>
+                <Text style={styles?.sectionSubTitle}>
+                  Languages:&nbsp;
+                  <Text style={styles?.sectionContentText}>
+                    {props.skills.languages.join(", ")}
+                  </Text>
+                </Text>
+                <Text style={styles?.sectionSubTitle}>
+                  Tools:&nbsp;
+                  <Text style={styles?.sectionContentText}>
+                    {props.skills.tools.join(", ")}
+                  </Text>
                 </Text>
               </View>
             </View>

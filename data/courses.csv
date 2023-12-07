@@ -1,24 +1,24 @@
 code,name,grade_level,required,prerequisite
 CSC 101,Fundamentals of Computer Science,1,1,
 MATH 141,Calculus II,1,0,
-CSC 123,Introduction to Computing,1,0,
+CSC 123,Intro to Computing,1,0,
 CSC 202,Data Structures,1,1,CSC 101
-CSC 203,Project-Based Object-Oriented Programming,2,1,CSC 202
-CPE 225,Introduction to Computer Organization,2,1,CSC 202
+CSC 203,Object-Oriented Programming,2,1,CSC 202
+CPE 225,Intro to Computer Organization,2,1,CSC 202
 CSC 248,Discrete Structures,2,1,CSC 202
 CPE 357,Systems Programming,2,1,CSC 203;CPE 225
-DATA 301,Introduction to Data Science,3,0,CSC 101
+DATA 301,Intro to Data Science,3,0,CSC 101
 CSC 305,Individual Software Design and Development,3,1,CSC 203
-CSC 307,Introduction to Software Engineering,3,1,CSC 248;CSC 357
+CSC 307,Intro to Software Engineering,3,1,CSC 248;CSC 357
 CSC 308,Software Engineering I,3,0,CSC 248
 CSC 309,Software Engineering II,3,0,CSC 308
 CPE 315,Computer Architecture,2,0,CSC 357
-CSC 321,Introduction to Computer Security,3,1,CSC 357
+CSC 321,Intro to Computer Security,3,1,CSC 357
 CSC 323,Cryptography Engineering,3,0,CSC 357
-CSC 325,Introduction to Privacy: Policy and Technology,3,0,CSC 203
+CSC 325,Intro to Privacy: Policy and Technology,3,0,CSC 203
 CSC 349,Design and Analysis of Algorithms,3,1,CSC 203
-CSC 365,Introduction to Database Systems,3,1,CSC 248;CSC 203
-CSC 369,Introduction to Distributed Computing,3,0,CSC 203
+CSC 365,Intro to Database Systems,3,1,CSC 248;CSC 203
+CSC 369,Intro to Distributed Computing,3,0,CSC 203
 CSC 371,Game Design,3,0,CSC 202
 CSC 378,Interactive Entertainment Engineering,3,0,CSC 202
 CSC 430,Programming Languages,3,1,CSC 349
@@ -30,18 +30,17 @@ CSC 410,Software Evaluation,4,0,CSC 349
 CPE 416,Autonomous Mobile Robotics,4,0,CPE 315
 CSC 421,Binary Exploitation,4,0,CSC 321
 CSC 431,Compiler Construction,4,0,CSC 430
-CSC 445,Theory of Computation I,4,1,CSC 248
+CSC 445,Theory of Computation,4,1,CSC 248
 CSC 448,Bioinformatics Algorithms,4,0,CSC 349
-CSC 453,Introduction to Operating Systems,4,1,CSC 357
-CSC 471,Introduction to Computer Graphics,4,0,CSC 357
+CSC 453,Operating Systems,4,1,CSC 357
+CSC 471,Computer Graphics,4,0,CSC 357
 CSC 482,Speech and Language Processing,4,0,CSC 480
-CSC 484,User-Centered Interface Design and Development,4,0,CSC 307
+CSC 484,User-Centered Interface Design,4,0,CSC 307
 CSC 487,Deep Learning,4,0,CSC 480
-CSC 515,Computer Architecture,5,0,CPE 315
-CSC 521,Computer Security,5,0,CSC 321
+CSC 521,Computer Security (graduate),5,0,CSC 321
 CSC 549,Advanced Algorithm Design and Analysis,5,0,CSC 349
-CSC 550,Operating Systems,5,0,CSC 453
-CSC 560,Database Systems,5,0,CSC 365
-CSC 569,Distributed Computing,5,0,CSC 369
-CSC 572,Computer Graphics,5,0,CSC 471
-CSC 580,Artificial Intelligence,5,0,CSC 480
+CSC 550,Operating Systems (graduate),5,0,CSC 453
+CSC 560,Database Systems (graduate),5,0,CSC 365
+CSC 569,Distributed Computing (graduate),5,0,CSC 369
+CSC 572,Computer Graphics (graduate),5,0,CSC 471
+CSC 580,Artificial Intelligence (graduate),5,0,CSC 480

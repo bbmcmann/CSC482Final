@@ -13,8 +13,13 @@ def get_bio(input_name, skills, input_end, input_year):
     # Get adjectives
     adjectives = get_adjectives()
 
+    # Get skills
+    skills = get_skills(skills)
+
     # Substitute fields in the bio string
-    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], skill1 = skills[0], skill2 = skills[1], skill3 = skills[3], end = input_end, year = get_formatted_year(input_year))
+    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], 
+                                        skill1 = skills[0], skill2 = skills[1], skill3 = skills[3],
+                                        end = input_end, year = get_formatted_year(input_year))
 
     print(formatted_bio)
     return formatted_bio
@@ -36,21 +41,27 @@ def get_formatted_year(year):
     year_endings = {1: 'st', 2: 'nd', 3: 'rd', 4: 'th', 5: 'th'}
     return str(year) + year_endings[year]
 
+def get_skills(skills):
+    skills_flat = skills.get('languages') + skills.get('tools')
+    # Remove newline characters and select 5 random skills
+    selected_skills = random.sample(skills_flat, 5)
+    selected_skills = [skill.strip() for skill in selected_skills]
+
+    return selected_skills
 
 if __name__ == "__main__":
-    skills = [
-            "Python",
-            "Java",
-            "C++",
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Go",
-            "HTML",
-            "CSS",
-            "SQL",
-            "Git",
-          ]
+    skills = {
+            "languages":["Python",
+                        "Java",
+                        "C++",
+                        "JavaScript",
+                        "TypeScript",
+                        "Go",
+                        "HTML",
+                        "CSS",
+                        "SQL"],
+            "tools": ["Flask", "React", "Git"]
+    }
     end = "September 2021"
     year = random.randint(1, 5)
     get_bio('John Doe', skills, end, year)
