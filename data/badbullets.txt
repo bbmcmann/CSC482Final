@@ -1,0 +1,350 @@
+2021–2023
+Year-Round
+2023
+January–June
+2016–2019
+June–August
+2015–2017
+June–August
+Software Engineer Intern, Collective[i]
+Worked on a scrum team of professional front-end engineers, used Node API endpoints created by our
+back-end team, and Angular, to develop a web application according to requirements defined through
+tickets in Jira. (To be competitive with Salesforce)
+UI/UX Developer, Codenames AI Senior Project
+Engineered an AI-integrated Codenames game application by leading front-end development with SolidJS,
+establishing real-time communication via WebSockets, and delivering a responsive interface with HTML
+and Bootstrap to enhance bot development.
+Web Development Intern, Berkeley Engineering and Research Inc. (BEAR)
+Developed website, web app, and database, currently utilized by all company employees, for tracking
+employee work time using HTML, CSS, JavaScript, PHP / Django, and SQL.
+Senior Intern, TechHive: Lawrence Hall of Science, UC Berkeley
+Mentored teens in basic robotics and programming. Designed and constructed Arduino robots with
+reclaimed materials to be used in the Robot Petting Zoo exhibit, and later on, a Halloween VR exhibit.
+Computer Science Teaching Assistant
+San Jose State University
+January 2018 - current / San Jose, CA
+· Taught basic and upper-level undergraduate computer science and
+cybersecurity courses with class sizes averaging 35 students
+· Conducted 1,000+ hours of scholarship research per departmental
+promotion and tenure guidelines
+· Engaged with industry to maintain 100% ﬂuency in focus and to
+Applied AI Digital Democracy Lab Researcher | Cal Matters & Cal Poly University
+Summer 2023
+  Planned, implemented, & shipped tool to aid journalist in finding newsworthy state bill discussions
+  Developed pipeline using LSTM to classify 4000+ remarkable legislative hearings across 6 years of data
+
+  Presented comprehensive data analysis showcasing effectiveness and submitted research paper on findings
+Implemented data collection, cleaning, classification, & data analysis as a fluid architecture into single project
+Compiler Software Intern (Diab) | WindRiver
+Summer 2022
+  Worked on WindRiver’s state of the art diab compiler, at multiple stages from parser to the IR to the optimizer
+
+Integrated new compiler pipeline with WindRiver’s compiler to work with C++11 standards using C & C++
+  Succinctly presented finished EDG compiler integration to team, experts, and laymen
+  Finished 36+ story points in AGILE setting - biweekly sprints, daily scrums, creating, developing, & reviewing
+Coding Camp Instructor | iD Tech
+Summer 2021
+  Taught ages 9-18 Python, Lua & Keras for Python, Basics of Neural Networks, & Roblox Studio Game Design
+Software Developer Intern | 6crickets
+Summer 2020
+  Built over 30 custom programs to scrape the web in Python using BeautifulSoup and Selenium
+  Collaborated in creating a library of 15 functions for web crawling to optimize efficiency
+Calpoly SLO, Undergraduate Student Researcher (San Luis Obispo, CA)
+Oct. 2023 - Present
+_
+•  NLP Research to diagnose chronic pain using Apache Spark with state-of-art NLP algorithms to construct knowledge graph.
+•  Used PFN Relation Extraction NLP algorithm to perform Co-Reference Resolution of Spark pipeline to improve knowledge graph by
+extracting textual relations from research papers.
+Calpoly SLO CS & AI Club, Engagement Officer (San Luis Obispo, CA)
+May 2023-Present
+•
+•
+Collaborated with a team of 9 officers to increase club membership from 15 members to 70 active members.
+Presented hands-on workshops on Machine Learning Model Deployment, Version Control with Git/GitHub.
+Amazon Web Services (AWS), Software Developer Engineer Intern (Palo Alto, CA)                                                                 Jun. 2023-Sept. 2023
+•  Developed an automation application to streamline dashboard investigations of anomaly events in AWS Fully Managed Kafka
+Service (AWS MSK) monitoring 5-10 anomaly states of 42 API’s across 36 AWS regions to pinpoint sources of anomaly for
+investigations conducted by on-call employees.
+•  Reduced dashboard investigation process from 3 hours to 20 minutes, allowing on-calls to have more time to fix customer tickets.
+•
+Implemented a Java AWS Lambda function with batched processing (AWS SQS) to conduct in-depth investigations of CloudWatch
+error logs to retrieve relevant data pertaining to each anomaly type.
+Stored Investigation results in an S3 bucket and defined AWS Athena SQL tables for each anomaly type.
+Created a runbook of SQL queries, enabling on-call employees to perform data analysis and investigations.
+Implemented a weekly AWS Glue job script with Python and Spark SQL to generate weekly investigation email reports with
+Amazon Simple Email Service (SES), providing further actionable insights to on-call employees.
+•
+•
+•
+Lawrence Livermore National Laboratory, Software Engineering Intern (Livermore, CA)                                                        May 2022-Aug. 2022
+•  Designed and implemented internal Python package to automate weekly synchronization of data composed of 500,000 records
+from unclassified to classified instance.
+•  Optimized data migration process resulting in data migration time being reduced from 2 hours to 15 minutes by leveraging
+multithreading, allowing employees to have more time to fix customer tickets.
+Contributed to data archive codebase by developing new features, RESTful API endpoints, unit and integration tests, bug fixes and
+reviewing code of 8 team members.
+Participated in Agile development process consisting of weekly Scrum and Sprint and reviewed employee tickets.
+•
+•
+Glocol Networks, Software Engineering Intern (Sacramento, CA)
+Dec. 2021-May 2022
+•  Object detection of bicycles on trains using the yolov5 object detection algorithm with Intel OpenVino for Raspberry Pi devices
+•
+•
+with Intel NCS2 VPU hardware allowing Amtrak to gain insights into bicycle use of ridership.
+Implemented AWS Lambda function to receive batched bike count readings from AWS API Gateway and recorded results in AWS
+DynamoDB.
+Created a web application to schedule train occupancy count scanning with AWS Amplify, Vue.js and DynamoDB resulting in 20%
+cost reduction of AWS cloud resources in comparison to prior process.
+American River College, Software Engineering Intern (Sacramento, CA)
+Aug. 2021-May 2022
+• Developed web application for Sutter’s Fort Cemetery to allow public to access historical archival records.
+• Implemented two-factor user authentication for staff to add/update records.
+• Conducted data analysis, utilizing pandas to clean and validate archival datasets comprising of over 20,000 entries.
+• Implemented frontend in React.js and backend in Node.js (Express) with MySQL database of cleaned datasets.
+● Developed full-scale React Apps using AWS S3, CloudFront, and Route 53
+● Leveraged React Google Maps API to display maps and map elements
+●
+Built scalable, RESTful back-end services with AWS Lambda, API Gateway, S3,
+DynamoDB and Quicksight
+● Used AWS Cloud Development Kit to deploy back-end services and their required
+resources to AWS
+● Developed interactive components enabling users to send feedback using AWS
+●
+●
+Lambda and SNS
+Leveraged AWS Cognito to authenticate users across applications
+Indexed a DynamoDB table for eﬃcient data lookups with real-time Geohashing
+and Geofencing
+Roughin’ It Day Camp - Group Counselor
+Lafayette, CA
+Jun 2022 – Aug 2023
+● Led a group of 2nd and 3rd grade campers through daily activities and team
+building games
+● Maintained discipline among campers through positive reinforcement and
+individualized oversight of behaviors and interactions
+Professional Development - Artiﬁcial Intelligence
+Jul 2023 – Sep 2023
+Undertook a professional development project to achieve a deeper understanding of
+Generative AI, focusing on Large Language Models (LLMs). Explored a project involving
+an LLM querying an extensive, private dataset through Langchain – utilizing its chat
+interface to construct a personalized university class schedule.
+FreshDirect - Full Stack Engineer Intern
+April 2018 - September 2018
+Portland, OR
+· Constructed Angular components for customer-facing web app, improving users' page time by 3 minutes
+· Worked within agile team to prioritize and scope feature requests, placing biggest impacts at top
+· Built extensive test coverage for new features, which reduced customer complaints by 23%
+· Created database schemas, saving company more than $7K in implementation costs
+Marketing Science Associates - Full Stack Engineer Intern
+April 2017 - September 2017
+Pittsburgh PA
+· Implemented RESTful APIs in Django, enabling analytics team to increase reporting speed by 22%
+· Built out a unit testing infrastructure for a client web application using Selenium that reduced the number
+of bugs reported by the client by 14% month over month
+· Updated documentation while working to triage user problems, increasing efﬁciency by 10%
+· Participated in code reviews, advising against changes that would hinder scalability
+Technical Support
+Mascoma Bank
+November 2022 - current
+Hanover, NH
+Reduced case resolution time by 28% by leveraging Visual Studio
+Code to debug and solve software-related customer complaints.
+Increased team productivity by 21% by developing a JavaScript-
+based internal tool that automated repetitive tech support tasks.
+Guided the transition from manual testing to Selenium-based
+automated testing, reducing testing time by 39% on average.
+Led weekly technical training sessions for non-technical bank staff
+that reduced internal support tickets by 16%.
+Ofﬁce Assistant
+Hypertherm
+September 2021 - September 2022
+Hanover, NH
+Enabled more informed decision-making by preparing 35+ weekly
+reports for senior management.
+Cut paper use in half by promoting and demonstrating digital
+solutions for record-keeping and communication.
+Coordinated travel arrangements for 7 C-suite executives and
+reduced travel costs through strategic and timely bookings.
+Conducted initial screening for 150+ job applications, reducing the
+workload of the HR team.
+Web Developer Intern
+Book of the Month
+April 2019 - September 2019 / Chicago, IL
+the tool, saving employees 14 monthly hours in labor
+· Developed in-house web app using Node, React, and HTML/CSS
+that allowed employees to manage and recommend books
+· Gathered user requirements, and built and maintained code for
+· Collaborated with 3 interns and senior developer to brainstorm
+and implement ideas and feedback into app's development
+· Selected as the top performing intern by the technology team
+Veeva Systems
+Software Engineer Intern - Core Documents Team
+Remote
+Jun 2023 – Sept 2023
+● Operated as a fullstack developer on Vault Platform’s Core Documents team - adding and improving core
+functionality on the Vault product, a multi-tenant system focused on document and data management
+● Improved the user interface and optimized the performance of a bulk document restoration feature, resulting in a
+15% faster execution time
+● Collaborated with the team and cross-team members to resolve 5+ issues in Document’s wide product area
+● Utilized Java, Spring, and MySQL for the backend and React and Javascript for the frontend
+Workday
+Software Application Engineer Intern - Person Team
+Pleasanton, CA
+Jun 2022 – Sept 2022
+● Developed an internal tool that expedites feature testing by allowing developers to generate custom test data
+● Enhanced a key feature, enabling the identification of duplicate persons in a recruiting pipeline by name
+● Conducted comprehensive performance testing on the above features to ensure acceptable response times
+● Utilized proprietary object-oriented languages and frameworks, JIRA, and Crucible; Gained knowledge of the
+software development lifecycle and scrum
+Air Force Civilian Service — Hill AFB, UT
+June 2023 – Aug. 2023
+• Improved the accuracy of the language model for a physical chatbot by 57% with an LSTM network
+• Produced a comprehensive test suite and report to advocate for the adoption of my model over the existing one
+• Created a presentation to educate over 30 department members on various machine learning topics including neural networks
+June 2022 – July 2022
+Computer Science Teacher — San Luis Obispo High School
+• Developed and taught a computer science curriculum for 150 elementary and middle school students
+• Presented topics including project design, computer systems, artificial intelligence, debugging methods, and game physics
+Data Structures Teaching Assistant — Cal Poly, San Luis Obispo
+Jan. 2022 – Mar. 2022
+Artesian Future Technology – Intern
+Aided with implementation of new company website. Built computers for sale and developed internal computer
+wiring system for in-house lighting products. Partnered company with brand ambassadors.
+Summer 2021
+Loard’s Ice Cream Orinda – Team Member
+desktop versions to illustrate individual impact towards climate change
+• Proﬁciently managed the entire development process from ideation and programming to debugging
+and playtesting
+January 2023 – June 2023
+SLO Hikes | (JavaScript, React, Node.js, HTML, CSS )
+• Guaranteed the delivery of high-quality software by employing code linters, conducting rigorous unit
+and acceptance testing, and implementing continuous integration and deployment processes
+• Uniﬁed the team through efﬁcient task division, transparent communication, and diligent performance
+with 115 code commits
+February 2021 – March 2021
+Facilitated user acceptance testing (UAT) to gather
+feedback, with changes based on the feedback leading to a
+27% increase in customer satisfaction scores.
+TravelBuddy
+Front-End Developer
+January 2021 - January 2022
+Pioneered the development of the TravelBuddy app that
+helped users plan itineraries and save travel information.
+Implemented responsive web design using Python that
+improved app performance and increased mobile users by
+38% and tablet users by 21%.
+Streamlined the app's front-end codebase, reducing page
+load times by 39% and increasing app speed by 26%.
+Increased the app's daily active users by leading the design
+and implementation of the itinerary planner feature.
+Introduced a new feature to sync travel information across
+devices, improving user retention by 18%.
+HOBBIES
+Playing Chess
+Reading non-ﬁction books
+Developing productivity and messaging apps
+upon the code base
+Software Development Intern
+Lockheed Martin, Boulder, Colorado
+June 2023 - August 2023
+● Developed, and maintained fully functional GTK GUI from scratch to track usage of internal
+resources in a Linux environment with insight from managers and other users
+Android Developer Intern
+Genesis10
+May 2021 - current
+· Designed and built 12 innovative, intuitive and responsive
+San Jose, CA
+native apps
+· Managed coding, packaging and deployment, and
+monitoring performance and stability for 10+ apps
+· Analyzed and guaranteed performance quality and
+responsiveness of 100% of applications
+· Investigated and resolved 300+ issues reported by testing
+teams to determine impact and root cause
+· Worked with 2 Quality Assurance teams for end-to-end
+testing and certiﬁcation of product delivery
+· Overhauled team development-related processes that
+accelerated delivery, drove innovation, lowered costs, and
+improved quality
+· Completed 15+ two-week sprints and participated in sprint
+retrospectives and daily standups
+· Owned the entire lifecycle of feature development for 12
+applications, from design to launch
+Android Developer Intern
+Novalsys, Inc
+January 2021 - May 2021
+· Worked with 4 mobile engineering team members to build
+Milpitas, CA
+new features
+· Assisted with bug ﬁxing and improving performance on 8
+different applications
+· Maintained a cutting-edge knowledge of Android
+development via 100+ hours of personal instruction from
+senior developers
+· Executed 100% data integrity and validation
+· Participated in all stages of development with 8 other
+Android developers of various skill levels
+· Worked with 2 product and design teams to innovate
+existing and new experiences
+Technician
+University of Texas Help Desk
+January 2018 - May 2021
+· Worked 18 hours a week in the campus' largest computer lab
+to troubleshoot students' issues with network connectivity,
+printers, and related technology
+Austin, TX
+· Streamlined the process of responding to issues by
+implementing a ticketing system and grouping similar issues
+together to reduce resources and time to complete inbound
+requests by 2 hours
+· Answered phone calls, messages, and chatroom, and assisted
+with scheduling complex issues that required appointments
+· Trained 3 freshmen help desk technicians in procedures, work
+· Performed software updates and routine maintenance on
+ticketing system, and conﬂict management
+computers, printers, and copy machines
+Research Assistant
+UT Computer Science Institute
+April 2015 - January 2018
+· Developed an interactive web app for Trial, an app that
+Austin, TX
+streamlines the process of literature review for researchers in
+the University of Texas School of Medicine
+documented processes and ﬁxes
+· Researched and tracked potential programming solutions, and
+· Built a scraper in Python to structure data on 5K+ publications,
+and used the Natural Language Toolkit library in Python for a
+Pulsepoint Foundation (Heart Attack Response Application)
+Software Development Intern / Co-op
+● Developed a React UI Tool for internal and external testing and use of the Address Decision Infrastructure(referenced
+Pleasanton, CA
+June 2022 – Present
+below), deployed and hosted on AWS using Terraform
+● Developing a system using machine learning algorithms to detect when systems went down to eliminate down time,
+recognizing problems often 2-3 days earlier than before
+Software Development Co-op
+● Brought current address verification(referenced below) infrastructure to a production ready level and helped to release to
+September 2021 – June 2022
+over 100 customers, built including services such as SmartyStreets and the Google Maps API
+● Monitored and drove gradual deployment to production and improved infrastructure and code based on data gathered
+during the continuous release
+● Developed a phone number verification service using text-messages built using AWS SNS and Lambda. Deployed to
+production
+Software Development Intern
+● Designed and built a multi-endpoint scalable event driven architecture on AWS for information distribution to partners,
+June 2021 – September 2021
+implemented for 300 customers and growing
+● Implemented using tools such as AWS Event-Bridge, DynamoDB, SNS, Lambda, REST APIs, Terraform
+● Improved the current Address Decision system (deciding if a location is private or public) for cardiac arrest incidents with
+AWS Lambda and Python, and increased correct decision making by 90% over the previous process
+Costar Group
+Software Engineering Intern
+● Developed a Natural Language Search engine to search for real estate listings with the Homes.com product utilizing Large
+San Diego, CA
+June 2023 – September 2023
+Language Models and AWS Opensearch
+● Created a Search UI in TypeScript and Google Maps API and a scalable REST API in Node.js, deployed with Docker,
+Kubernetes and AWS EKS. Analyzed search results and response time using Apache Spark in Databricks
+Cal Poly Cubesat Laboratory (Cubesat Development Laboratory)
+Software Engineer Team Lead
