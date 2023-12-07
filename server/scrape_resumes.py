@@ -6,7 +6,7 @@ import os
 warnings.filterwarnings("ignore", category=UserWarning)
 outfile = os.getcwd() + '/../data/bulletpoints.txt'
 badout = os.getcwd() + '/../data/badbullets.txt'
-
+skillsfile = os.getcwd() + '/../data/skills.txt'
 
 def parse_experience(experience: list):
     if experience is None:
@@ -44,12 +44,15 @@ for root, dirs, files in os.walk(os.getcwd() + '/../data/resumes'):
 
 bullets = []
 bad_bullets = []
+skills = []
 for pdf in pdfs:
     data = ResumeParser(pdf).get_extracted_data()
     if data['experience'] is not None:
         bad_bullets += data['experience']
     new_bullets = parse_experience(data['experience'])
     bullets += new_bullets
+    if data['skills'] is not None:
+        skills += data['skills']
 
 
 with open(outfile, 'w') as out:
@@ -60,4 +63,7 @@ with open(badout, 'w') as out:
     for bullet in bad_bullets:
         out.write(f"{bullet}\n")
 
-
+with open(skillsfile, 'w') as out:
+    skills = set(skills)
+    for skill in skills:
+        out.write(f"{skill}\n")

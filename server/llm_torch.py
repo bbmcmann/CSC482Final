@@ -9,6 +9,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import time, math
+import os
 
 
 # helper function
@@ -52,7 +53,7 @@ if __name__ == '__main__':
         print('No GPU available, training on CPU; consider making n_epochs very small.')
 
     # get data
-    train_df = pd.read_csv('C:\\Users\\bbmcm\\PycharmProjects\\CSC482Final\\server\\train.csv')
+    train_df = pd.read_csv(os.getcwd() + '/../server/train.csv')
     author = train_df[train_df['author'] == 'EAP']["text"]
     print(author[:5])
 
