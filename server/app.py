@@ -8,7 +8,7 @@ import header
 cwd = os.getcwd()
 sys.path.append(cwd + '/../')
 import bio
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS, cross_origin
 
 from data import generate_basic
@@ -28,7 +28,11 @@ def generateStudent():
     areacode = generate_basic.get_area_code(homecity)
     genHeader = header.getHeader(areacode)
     start, end = generate_basic.get_years()
-    year = random.randint(1, 5)
+    year = int(request.args.get('year'))
+    if year == 6:
+      year = random.randint(1, 5)
+    else:
+      year = year
     skills = {
         "languages": [
             "Python",
@@ -50,6 +54,7 @@ def generateStudent():
     return {
         'bio': genBio,
         'resume': {
+          'year': year,
           'name': genHeader['name'],
           'email': genHeader['email'],
           'phone': genHeader['phone'],
