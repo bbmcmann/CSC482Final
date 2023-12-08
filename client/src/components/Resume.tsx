@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { getVariantStd } from "./resumeStyles";
 
 export type ResumeProps = {
+  year: number;
   name: string;
   email: string;
   phone: string;
@@ -26,7 +27,6 @@ export type ResumeProps = {
   };
   experience: {
     company: string;
-    location: string;
     position: string;
     start: string;
     end: string;
@@ -125,9 +125,6 @@ export default function Resume(props: ResumeProps) {
                     <View style={styles?.rowPrim}>
                       <Text style={styles?.sectionSubTitle}>
                         {exp.position}
-                      </Text>
-                      <Text style={styles?.sectionContentText}>
-                        {exp.location}
                       </Text>
                     </View>
                     <View style={styles?.rowSec}>
