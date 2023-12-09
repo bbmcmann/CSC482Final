@@ -3,7 +3,7 @@ Engineered an AI-integrated Codenames game application by leading front-end deve
 Mentored teens in basic robotics and programming. Designed and constructed Arduino robots with reclaimed materials to be used in the Robot Petting Zoo exhibit, and later on, a Halloween VR exhibit.
 Taught basic and upper-level undergraduate computer science and cybersecurity courses with class sizes averaging 35 students
 Conducted 1,000+ hours of scholarship research per departmental promotion and tenure guidelines
-Engaged with industry to maintain 100% ﬂuency in focus and to
+Engaged with industry to maintain 100% fluency in focus and to
 Planned, implemented, & shipped tool to aid journalist in finding newsworthy state bill discussions
 Developed pipeline using LSTM to classify 4000+ remarkable legislative hearings across 6 years of data
 Presented comprehensive data analysis showcasing effectiveness and submitted research paper on findings
@@ -48,7 +48,7 @@ Built extensive test coverage for new features, which reduced customer complaint
 Created database schemas, saving company more than $7K in implementation costs
 Implemented RESTful APIs in Django, enabling analytics team to increase reporting speed by 22%
 Built out a unit testing infrastructure for a client web application using Selenium that reduced the number of bugs reported by the client by 14% month over month
-Updated documentation while working to triage user problems, increasing efﬁciency by 10%
+Updated documentation while working to triage user problems, increasing efficiency by 10%
 Participated in code reviews, advising against changes that would hinder scalability
 Reduced case resolution time by 28% by leveraging Visual Studio
 Increased team productivity by 21% by developing a JavaScript- based internal tool that automated repetitive tech support tasks.
@@ -76,9 +76,9 @@ Created a presentation to educate over 30 department members on various machine 
 Developed and taught a computer science curriculum for 150 elementary and middle school students
 Presented topics including project design, computer systems, artificial intelligence, debugging methods, and game physics
 Aided with implementation of new company website. Built computers for sale and developed internal computer wiring system for in-house lighting products. Partnered company with brand ambassadors.
-Proﬁciently managed the entire development process from ideation and programming to debugging and playtesting
+Proficiently managed the entire development process from ideation and programming to debugging and playtesting
 Guaranteed the delivery of high-quality software by employing code linters, conducting rigorous unit and acceptance testing, and implementing continuous integration and deployment processes
-Uniﬁed the team through efﬁcient task division, transparent communication, and diligent performance with 115 code commits
+Unified the team through efficient task division, transparent communication, and diligent performance with 115 code commits
 Facilitated user acceptance testing (UAT) to gather feedback, with changes based on the feedback leading to a 27% increase in customer satisfaction scores.
 Pioneered the development of the TravelBuddy app that helped users plan itineraries and save travel information.
 Implemented responsive web design using Python that improved app performance and increased mobile users by 38% and tablet users by 21%.
@@ -90,12 +90,12 @@ Designed and built 12 innovative, intuitive and responsive
 Managed coding, packaging and deployment, and monitoring performance and stability for 10+ apps
 Analyzed and guaranteed performance quality and responsiveness of 100% of applications
 Investigated and resolved 300+ issues reported by testing teams to determine impact and root cause
-Worked with 2 Quality Assurance teams for end-to-end testing and certiﬁcation of product delivery
+Worked with 2 Quality Assurance teams for end-to-end testing and certification of product delivery
 Overhauled team development-related processes that accelerated delivery, drove innovation, lowered costs, and improved quality
 Completed 15+ two-week sprints and participated in sprint retrospectives and daily standups
 Owned the entire lifecycle of feature development for 12 applications, from design to launch
 Worked with 4 mobile engineering team members to build
-Assisted with bug ﬁxing and improving performance on 8 different applications
+Assisted with bug fixing and improving performance on 8 different applications
 Maintained a cutting-edge knowledge of Android development via 100+ hours of personal instruction from senior developers
 Executed 100% data integrity and validation
 Participated in all stages of development with 8 other
