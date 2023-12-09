@@ -19,13 +19,31 @@ all_projects = [
     "Computer Vision Project",
     "GUI Interface",
     "Platformer Video Game",
-    "Social Network Website"
+    "Social Network Website",
+    "Image Captioning AI",
+    "Stellar Classification AI",
+    "SLO Hikes Software",
+    "Cal Poly Hack4Impact",
+    "Cal Poly Racing",
+    "Cal Poly Robotics",
+    "SLOHacks Hackathon",
+    "Volunteer Management System WebApp",
+    "Idiom Identifier",
+    "Custom Mobile App",
+    "Personal Portfolio Website",
+    "Virtual World Simulator",
+    "Programming Language Interpreter",
+    "Discord Server and Bot"
 ]
 
 work_positions = [
     "Software Engineering Intern",
     "Software Development Intern",
-    "Software Development Coop"
+    "Software Development Co-op",
+    "Software Developer",
+    "DevOps Intern",
+    "UI/UX Developer",
+    "Student Researcher"
 ]
 
 project_roles = [
