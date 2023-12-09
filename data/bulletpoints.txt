@@ -104,7 +104,7 @@ Worked 18 hours a week in the campus' largest computer lab to troubleshoot stude
 Streamlined the process of responding to issues by implementing a ticketing system and grouping similar issues together to reduce resources and time to complete inbound requests by 2 hours
 Answered phone calls, messages, and chatroom, and assisted with scheduling complex issues that required appointments
 Trained 3 freshmen help desk technicians in procedures, work
-Performed software updates and routine maintenance on ticketing system, and conﬂict management computers, printers, and copy machines
+Performed software updates and routine maintenance on ticketing system, and conflict management computers, printers, and copy machines
 Developed an interactive web app for Trial, an app that
 Researched and tracked potential programming solutions, and
 Built a scraper in Python to structure data on 5K+ publications, and used the Natural Language Toolkit library in Python for a
