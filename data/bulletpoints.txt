@@ -4,8 +4,17 @@ Mentored teens in basic robotics and programming. Designed and constructed Ardui
 Taught basic and upper-level undergraduate computer science and cybersecurity courses with class sizes averaging 35 students
 Conducted 1,000+ hours of scholarship research per departmental promotion and tenure guidelines
 Engaged with industry to maintain 100% ﬂuency in focus and to
+Planned, implemented, & shipped tool to aid journalist in finding newsworthy state bill discussions
+Developed pipeline using LSTM to classify 4000+ remarkable legislative hearings across 6 years of data
+Presented comprehensive data analysis showcasing effectiveness and submitted research paper on findings
 Implemented data collection, cleaning, classification, & data analysis as a fluid architecture into single project
+Worked on WindRiver’s state of the art diab compiler, at multiple stages from parser to the IR to the optimizer
 Integrated new compiler pipeline with WindRiver’s compiler to work with C++11 standards using C & C++
+Succinctly presented finished EDG compiler integration to team, experts, and laymen
+Finished 36+ story points in AGILE setting - biweekly sprints, daily scrums, creating, developing, & reviewing
+Taught ages 9-18 Python, Lua & Keras for Python, Basics of Neural Networks, & Roblox Studio Game Design
+Built over 30 custom programs to scrape the web in Python using BeautifulSoup and Selenium
+Collaborated in creating a library of 15 functions for web crawling to optimize efficiency
 NLP Research to diagnose chronic pain using Apache Spark with state-of-art NLP algorithms to construct knowledge graph.
 Used PFN Relation Extraction NLP algorithm to perform Co-Reference Resolution of Spark pipeline to improve knowledge graph by extracting textual relations from research papers.
 Collaborated with a team of 9 officers to increase club membership from 15 members to 70 active members.
@@ -51,14 +60,16 @@ Developed in-house web app using Node, React, and HTML/CSS that allowed employee
 Gathered user requirements, and built and maintained code for
 Collaborated with 3 interns and senior developer to brainstorm and implement ideas and feedback into app's development
 Selected as the top performing intern by the technology team
-Operated as a fullstack developer on Vault Platform’s Core Documents team - adding and improving core functionality on the Vault product, a multi-tenant system focused on document and data management
-Improved the user interface and optimized the performance of a bulk document restoration feature, resulting in a 15% faster execution time
-Collaborated with the team and cross-team members to resolve 5+ issues in Document’s wide product area
-Utilized Java, Spring, and MySQL for the backend and React and Javascript for the frontend
-Developed an internal tool that expedites feature testing by allowing developers to generate custom test data
-Enhanced a key feature, enabling the identification of duplicate persons in a recruiting pipeline by name
-Conducted comprehensive performance testing on the above features to ensure acceptable response times
-Utilized proprietary object-oriented languages and frameworks, JIRA, and Crucible; Gained knowledge of the software development lifecycle and scrum
+University club that develops web apps for local non-profit organizations to help them better achieve their missions
+Developed a volunteer management system for the Woods Humane Society when first joining as a developer
+Led a team of developers in 2022 to develop a donation tracker; Directed app design and implementation, conducted weekly sprint planning, and delivered product to a non-profit as a tech lead
+Currently planning and executing new engineering initiatives such as developer boot camp, tech lead boot camp, and migrating project deployments to Vercel as a club board member
+Utilized Javascript, Typescript, React, Node.js, AWS Amplify, Express, MongoDB, NextJS, and Git
+Developed a full-stack web application designed to educate students in intro CS courses on UML diagramming and fundamental object-oriented design principles
+Implemented an interactive diagramming interface with React, RESTful backend server with Express, and CI/CD pipeline with GitHub Actions and Vercel
+Currently implementing a Java code generation algorithm from the diagrams constructed within the application
+Collaborated with a four-member team to create a banana-themed social movie review web application
+Led sprint planning, designed, and implemented movie search, CRUD, storage, and integration to an external API
 Improved the accuracy of the language model for a physical chatbot by 57% with an LSTM network
 Produced a comprehensive test suite and report to advocate for the adoption of my model over the existing one
 Created a presentation to educate over 30 department members on various machine learning topics including neural networks

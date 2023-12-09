@@ -35,9 +35,9 @@ def get_home_city(region):
 def get_area_code(city):
     return citiesbyregion[citiesbyregion['City'] == city]['Area Code'].iloc[0]
 
-def get_years():
-    start = 2020 + random.randint(0, 3)
-    end = start + 4
+def get_years(year):
+    start = 2024 - year
+    end = start + 4 if year < 5 else start+5
     return ('September ' + str(start), 'June ' + str(end))
 
 if __name__ == "__main__":

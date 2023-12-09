@@ -178,25 +178,30 @@ that allowed employees to manage and recommend books
 · Collaborated with 3 interns and senior developer to brainstorm
 and implement ideas and feedback into app's development
 · Selected as the top performing intern by the technology team
-Veeva Systems
-Software Engineer Intern - Core Documents Team
-Remote
-Jun 2023 – Sept 2023
-● Operated as a fullstack developer on Vault Platform’s Core Documents team - adding and improving core
-functionality on the Vault product, a multi-tenant system focused on document and data management
-● Improved the user interface and optimized the performance of a bulk document restoration feature, resulting in a
-15% faster execution time
-● Collaborated with the team and cross-team members to resolve 5+ issues in Document’s wide product area
-● Utilized Java, Spring, and MySQL for the backend and React and Javascript for the frontend
-Workday
-Software Application Engineer Intern - Person Team
-Pleasanton, CA
-Jun 2022 – Sept 2022
-● Developed an internal tool that expedites feature testing by allowing developers to generate custom test data
-● Enhanced a key feature, enabling the identification of duplicate persons in a recruiting pipeline by name
-● Conducted comprehensive performance testing on the above features to ensure acceptable response times
-● Utilized proprietary object-oriented languages and frameworks, JIRA, and Crucible; Gained knowledge of the
-software development lifecycle and scrum
+Hack4Impact Cal Poly
+Associate Director of Engineering | Tech Lead | Software Developer
+San Luis Obispo, CA
+Oct 2021 – Present
+● University club that develops web apps for local non-profit organizations to help them better achieve their missions
+● Developed a volunteer management system for the Woods Humane Society when first joining as a developer
+● Led a team of developers in 2022 to develop a donation tracker; Directed app design and implementation,
+conducted weekly sprint planning, and delivered product to a non-profit as a tech lead
+● Currently planning and executing new engineering initiatives such as developer boot camp, tech lead boot camp,
+and migrating project deployments to Vercel as a club board member
+● Utilized Javascript, Typescript, React, Node.js, AWS Amplify, Express, MongoDB, NextJS, and Git
+UML2Code
+Senior Project - https://uml2code.vercel.app/
+Mar 2023 – Present
+● Developed a full-stack web application designed to educate students in intro CS courses on UML diagramming
+and fundamental object-oriented design principles
+● Implemented an interactive diagramming interface with React, RESTful backend server with Express, and CI/CD
+pipeline with GitHub Actions and Vercel
+● Currently implementing a Java code generation algorithm from the diagrams constructed within the application
+The Bananalyst
+Course Team Project
+Oct 2022 – Dec 2022
+● Collaborated with a four-member team to create a banana-themed social movie review web application
+● Led sprint planning, designed, and implemented movie search, CRUD, storage, and integration to an external API
 Air Force Civilian Service — Hill AFB, UT
 June 2023 – Aug. 2023
 • Improved the accuracy of the language model for a physical chatbot by 57% with an LSTM network

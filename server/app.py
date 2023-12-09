@@ -4,6 +4,8 @@ import sys
 
 import courses
 import header
+import gen_skills
+import gen_experience
 
 cwd = os.getcwd()
 sys.path.append(cwd + '/../')
@@ -27,27 +29,29 @@ def generateStudent():
     homecity = generate_basic.get_home_city(home_region)
     areacode = generate_basic.get_area_code(homecity)
     genHeader = header.getHeader(areacode)
-    start, end = generate_basic.get_years()
     year = int(request.args.get('year'))
-    if year == 6:
+    if year >= 6:
       year = random.randint(1, 5)
     else:
       year = year
-    skills = {
-        "languages": [
-            "Python",
-            "Java",
-            "C++",
-            "JavaScript",
-            "TypeScript",
-          ],
-        "tools": [
-            "React",
-            "Go",
-            "Git",
-            "AWS",
-          ],
-    }
+
+    start, end = generate_basic.get_years(year)
+    skills = gen_skills.getSkills(year)
+    # skills = {
+    #     "languages": [
+    #         "Python",
+    #         "Java",
+    #         "C++",
+    #         "JavaScript",
+    #         "TypeScript",
+    #       ],
+    #     "tools": [
+    #         "React",
+    #         "Go",
+    #         "Git",
+    #         "AWS",
+    #       ],
+    # }
     genBio = bio.get_bio(genHeader['name'], skills, end, year)
     
 
@@ -68,55 +72,55 @@ def generateStudent():
             'end': end,
             'courses': courses.getCourses(year),
           },
-          'experience': [
-            {
-              'company': "Google",
-              'location': "Mountain View, CA",
-              'position': "Software Engineering Intern",
-              'start': "June 2021",
-              'end': "September 2021",
-              'description': [
-                "Worked on the Google Search team",
-                "Implemented a new feature for Google Search",
-                "Used React, TypeScript, and Go",
-              ],
-            },
-            {
-              'company': "Facebook",
-              'location': "Menlo Park, CA",
-              'position': "Software Engineering Intern",
-              'start': "June 2020",
-              'end': "September 2020",
-              'description': [
-                "Worked on the Facebook Search team",
-                "Implemented a new feature for Facebook Search",
-                "Used React, TypeScript, and Go",
-              ],
-            },
-          ],
-          'projects': [
-            {
-              'name': "Artificial CSC Student",
-              'role': "Creator",
-              'start': "September 2021",
-              'end': "Present",
-              'description': ["Created an artificial CSC student", "Used Python"],
-            },
-            {
-              'name': "Artificial CSC Student",
-              'role': "Creator",
-              'start': "September 2021",
-              'end': "Present",
-              'description': ["Created an artificial CSC student", "Used Python", "Used React"],
-            },
-            {
-              'name': "Artificial CSC Student",
-              'role': "Creator",
-              'start': "September 2021",
-              'end': "Present",
-              'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
-            },
-          ],
+          'experience': gen_experience.get_work(year), #[
+          #   {
+          #     'company': "Google",
+          #     'location': "Mountain View, CA",
+          #     'position': "Software Engineering Intern",
+          #     'start': "June 2021",
+          #     'end': "September 2021",
+          #     'description': [
+          #       "Worked on the Google Search team",
+          #       "Implemented a new feature for Google Search",
+          #       "Used React, TypeScript, and Go",
+          #     ],
+          #   },
+          #   {
+          #     'company': "Facebook",
+          #     'location': "Menlo Park, CA",
+          #     'position': "Software Engineering Intern",
+          #     'start': "June 2020",
+          #     'end': "September 2020",
+          #     'description': [
+          #       "Worked on the Facebook Search team",
+          #       "Implemented a new feature for Facebook Search",
+          #       "Used React, TypeScript, and Go",
+          #     ],
+          #   },
+          # ],
+          'projects': gen_experience.get_projects(year), #[
+          #   {
+          #     'name': "Artificial CSC Student",
+          #     'role': "Creator",
+          #     'start': "September 2021",
+          #     'end': "Present",
+          #     'description': ["Created an artificial CSC student", "Used Python"],
+          #   },
+          #   {
+          #     'name': "Artificial CSC Student",
+          #     'role': "Creator",
+          #     'start': "September 2021",
+          #     'end': "Present",
+          #     'description': ["Created an artificial CSC student", "Used Python", "Used React"],
+          #   },
+          #   {
+          #     'name': "Artificial CSC Student",
+          #     'role': "Creator",
+          #     'start': "September 2021",
+          #     'end': "Present",
+          #     'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
+          #   },
+          # ],
           'skills': skills
         }
       }
