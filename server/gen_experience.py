@@ -1,5 +1,6 @@
 import random
 import os
+import pandas as pd
 
 bullet_file = os.getcwd() + '/../data/bulletpoints.txt'
 company_file = os.getcwd() + '/../data/companies.txt'
@@ -7,8 +8,10 @@ company_file = os.getcwd() + '/../data/companies.txt'
 with open(bullet_file, 'r') as file:
     all_bullets = [b.rstrip() for b in file.readlines()]
 
-with open(company_file, 'r') as file:
-    all_companies = [c.rstrip() for c in file.readlines()]
+# with open(company_file, 'r') as file:
+#     all_companies = [c.rstrip() for c in file.readlines()]
+
+companies = pd.read_csv(os.getcwd() + '/../data/allcompanies.csv')
 
 all_projects = [
     "Artificial CSC Student",
@@ -41,7 +44,7 @@ def get_work(year):
         for j in range(3):
             bullets.append(generate_bullet())
         workinfo = {
-            'company': random.choice(all_companies),
+            'company': get_company(),
             'start': 'June ' + str(workyear),
             'end': 'September ' + str(workyear),
             'location': 'California',
@@ -81,3 +84,9 @@ def generate_bullet():
     ###
 
     return random.choice(all_bullets)
+
+
+def get_company():
+    total = companies['Number'].sum()
+    pcts = (companies['Number']/total).tolist()
+    return random.choices(companies['Company'].tolist(), pcts, k=1)[0]
