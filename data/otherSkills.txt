@@ -1,6 +1,5 @@
 Recruiting
 Training
-C
 Machine learning
 Pytorch
 Ai
@@ -11,37 +10,28 @@ Scrum
 Economics
 Click
 Postgresql
-Investigations
-Analyze
 Solidworks
 Computer science
-Ux
-Java
-C#
+UX
 Communication
 Engineering
 Engagement
-Ui
+UI
 Migration
 Analytics
 Software engineering
-Css
 Mathematics
 Apis
-Lifecycle
-Sci
 Spacy
 Beautifulsoup
-R
 Retention
 Brand
 Travel
-Ios
-Research
-System
+IOS
+CS Research
+System Design
 Coding
 Process
-Php
 Safety
 Cloud
 Nltk
@@ -50,51 +40,41 @@ Metrics
 Marketing
 Construction
 Keras
-Swift
 Numpy
 Automation
 Pycharm
 Publishing
 Tensorflow
-Mining
+Data Mining
 Datasets
 Programming
 Unix
 Operating systems
 Queries
-Plan
-Jose
 Writing
 Illustrator
-Website
-Python
+Web development
 Updates
 Data analysis
 Rest
 Javascript
 Pandas
 Vim
-Assembly
-Html
 User experience
-Api
+API
 Journalism
 Interactive
 Analysis
 Github
 Statistics
-C++
 Salesforce
 Agile
-Parser
 Requests
 Email
 Testing
 Outreach
-.net
 Twitter
 Design
-Js
 Jira
 Android
 Access
@@ -107,11 +87,8 @@ Phone calls
 Math
 Adobe
 Presentation
-Sql
-Aws
+AWS
 Calculus
-Technical
-Partnership
 Networking
 Debugging
 Photoshop
@@ -119,7 +96,6 @@ Investigation
 English
 Spark
 Reporting
-Mysql
 Strategy
 Reports
 Visual
@@ -127,24 +103,24 @@ Documentation
 Oracle
 Scheduling
 Database
-Tv
+TV
 Wordpress
 Physics
 Algorithms
 Word
-Ruby
 French
-Robot
-Schedule
+Robotics
+Time management
 Security
 Hardware
 Lighting
-International
 Django
 Transport
-Money
 Teaching
 Pattern
 Architecture
 Jupyter
 Flask
+Next.js
+React
+Node.js

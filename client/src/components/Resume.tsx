@@ -123,7 +123,7 @@ export default function Resume(props: ResumeProps) {
           </Text>
         </Text>
         <Text style={styles?.sectionSubTitle}>
-          Tools:&nbsp;
+          Tools/Other:&nbsp;
           <Text style={styles?.sectionContentText}>
             {props.skills.tools.join(", ")}
           </Text>

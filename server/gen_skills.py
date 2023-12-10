@@ -1,14 +1,17 @@
-import random
 import os
+import random
 
-skillsfile = os.getcwd() + '/../data/skills.txt'
+otherSkillsfile = os.getcwd() + '/../data/otherSkills.txt'
+languageSkillsfile = os.getcwd() + '/../data/languageSkills.txt'
 
 
 def getSkills(year):
-    with open(skillsfile, 'r') as file:
+    skills = {}
+    with open(languageSkillsfile, 'r') as file:
         all_skills = [s.rstrip() for s in file.readlines()]
-        langs = list(set(['Python'] + random.choices(all_skills, k=3+year)))
-        tools = list(set(['Git'] + random.choices(all_skills, k=1+year)))
-        skills = {"languages": langs,
-                  "tools": tools}
-        return skills
+        skills['languages'] = list(set(['Python'] + random.choices(all_skills, k=1+year)))
+    with open(otherSkillsfile, 'r') as file:
+        all_skills = [s.rstrip() for s in file.readlines()]
+        skills['tools'] = list(set(['Git'] + random.choices(all_skills, k=1+year)))
+        
+    return skills

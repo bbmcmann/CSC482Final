@@ -37,21 +37,6 @@ def generateStudent():
 
     start, end = generate_basic.get_years(year)
     skills = gen_skills.getSkills(year)
-    # skills = {
-    #     "languages": [
-    #         "Python",
-    #         "Java",
-    #         "C++",
-    #         "JavaScript",
-    #         "TypeScript",
-    #       ],
-    #     "tools": [
-    #         "React",
-    #         "Go",
-    #         "Git",
-    #         "AWS",
-    #       ],
-    # }
     genBio = bio.get_bio(genHeader['name'], skills, end, year)
     degree = "B.S." if year < 5 else "M.S."
     
