@@ -318,3 +318,321 @@ Collaborated with technical support teams to develop troubleshooting guides for 
 Conducted sentiment analysis on user reviews for product feedback insights.
 Assisted in the implementation of a continuous learning culture through knowledge-sharing sessions.
 Developed and maintained a system for automated log rotation and archival.
+Built software to automate and improve the efficiency of the lab.
+Researched the effect of tumor treating electric fields on patients with Glioblastoma.
+Working as a software developer in a non-profit organization that creates lasting social change by developing powerful and impactful projects for the community
+Strategically planning for an upcoming UX Hackathon, set to engage 150+ participants over two weekends.
+Managing speaker presentations, mentor outreach, room coordination, catering logistics, and innovating carnival booth concepts for an immersive event experience.
+Lead the establishment of the IGCSE Computer Science section at Eddy Academy.
+Crafted course narratives, conducted payment gateway finesse, and optimized product listings.
+Showcased my creativity by designing commercial student notes.
+Mentored a new intern to ensure smooth onboarding and fostered an environment of growth and excellence
+Elevated VrikshaMitra's online presence by transforming a blank site into an interactive WordPress platform.
+Led the development effort, designing user interfaces and navigation for a fully functional site, resulting in a successful launch.
+Used the MERN stack (MongoDB, Express, React, Node) to build a scheduling platform web application for Partners in Equestrian Therapy, a local 501(c)(3).
+Collaborated with a team of 12 (developers, PM, tech-leads, designers).
+Implemented monthly calendar layout, log-in conditional rendering, verification email design, and mobile time-slot coloring logic.
+Created data models on AWS Amplify.
+Developed data-driven web applications, websites focusing on UI/UX and strategic communications using HTML, CSS, and Javascript. 
+Assisted in backend maintenance tasks, including server updates, database optimization, and performance monitoring, to ensure the stable operation of web applications. 
+Managed databases, including data import/export, schema updates, and data migrations, ensuring efficient data storage and retrieval. 
+Developed data-driven web applications, websites focusing on UI/UX and strategic communications using HTML, CSS, and Javascript. 
+Assisted in backend maintenance tasks, including server updates, database optimization, and performance monitoring, to ensure the stable operation of web applications. 
+Managed databases, including data import/export, schema updates, and data migrations, ensuring efficient data storage and retrieval.
+Designed and developed RESTful APIs to facilitate seamless data retrieval, manipulation, and analysis for database systems, enhancing their functionality and usability.
+Performed data analysis on large volumes of data using SQL, Apache Spark and Apache Hive.
+Applied Agile methodology to ensure streamlined development cycles, customer feedback incorporation, and enhanced collaboration among cross-functional teams.
+Designed and deployed data solutions using AWS services such as EMR, Spark and Redshift.
+Developed an application that uses Fuzzy logic to match details of customers between databases to find similarity score and spot suspicion.
+Built end-to-end solution using ReactJS for frontend and ExpressJS framework for backend, adeptly handling asynchronous operations.
+Managed Git revision control, ensuring version tracking and collaborative code development.
+Automated the extraction of review data by implementing Selenium web scraping techniques.
+Researched and developed advanced autoencoder-based deep learning models tailored for anomaly detection, specifically targeting the identification of aberrant user-entitlement relationships
+Engaged in the transformation of research-oriented code into a production-grade solution, crafting modular classes and abstracting key product elements to ensure scalability and maintainability
+Worked to design and develop the goDeskless enterprise collaboration and communications application using Python and the Django framework
+Provided interactive UI mockups for mobile and desktop interfaces
+Designed and developed a WatchOS PWR Lab application using Swift, integrating features with core backend services
+Reimagined the user experience of the PWR Lab website using the Vue.js framework through HTML/CSS and JS. 
+Significantly improved capabilities for go-to-market strategy by developing landing pages for racing events
+Developed an interactive map of an athlete's running activity using geolocation technologies and map APIs through Vue.js
+Users able to visualize runs, increased customer satisfaction
+Worked on the Deep Learning Team on the AI4Search&Rescue Project lead by Cal Poly Professor Franz Kurfess, where we worked towards digitalizing the search and rescue process, making online forms for data entry and utilizing AI to create a probability map for a lost person’s location.
+Utilized Pandas to clean and sort multiple large databases containing Search and Rescue Data
+Managed the cloud infrastructure required for our computing needs using AWS and Marklogic
+Explored state of the art solutions and Deep Learning models that could be deployed to fit our unique needs
+Collaborated with Dr. Louise Edwards’ team to develop computational techniques to determine age, the assembly history and star formation histories of galaxies that will be collected from Legacy Survey of Space and Time completed by the Vera C. Rubin Observatory
+Utilized SQL (ADQL) techniques to efficiently explore, retrieve, and manage extensive datasets containing crucial information about billions of extragalactic objects including stars and galaxies for in-depth astronomical research
+Improved understanding of Bayesian analysis to apply Gaussian Process Regression for data analysis and create insightful visualizations of significant star formation events of galaxies
+Analyzed and optimized over 4,000 lines of code, eliminating redundancies, enhancing algorithms, improving code documentation, and implementing debugging techniques to significantly improve code readability and reduce processing time by nearly 30 percent
+Documented crucial insights from tutorials and research papers for improving code performance and assisting in report documentation
+Co-led a software team to plan and implement volunteer management and scholarship automation platform
+Collaborated with a team of developers to improve a non-profit housing organization website to handle scheduling and donations tracking on account, file uploading features using TypeScript, React, MongoDB, AWS
+Collaborate with a dynamic team to develop and enhance a cutting-edge document signing app that leverages blockchain technology.
+Focused on full-stack development, collaborated on product direction, highlighting and defining unique selling points
+Mentored and supervised by Mingjie Jiang, Software Engineer at Ender
+Worked in a team of three to plan and build a form verification system using React with Next.js and Bootstrap
+Investigated and used Regex to solve a backlogged bug in Stitches, an open-source CSS-in-JavaScript library that increases efficiency in styling web apps
+Contributed to the development of full-stack applications using MongoDB, Express.js, React, and Node.js, facilitating seamless data flow and user experiences.
+Collaborated effectively within a scrum team as a full-stack developer, demonstrating strong teamwork and communication skills to deliver solutions tailored to the specific needs of Habitat for Humanity SLO's volunteer organization.
+Implemented AWS Cognito for user authentication, enhancing the website's security and user privacy, while providing a seamless and reliable authentication mechanism for volunteers and stakeholders.
+Developed and enhanced frontend components and features for a data visualizer web application using React, tsx, Material-UI (MUI), and Tailwind CSS, resulting in improved user experience and interface responsiveness.
+Integrated the web application with API endpoints to fetch and display data from the Executive Office for Immigration Review, ensuring accurate and up-to-date information for users.
+Implemented form validation for frontend components, significantly reducing data entry errors and enhancing the overall data integrity of the web application.
+Collaborated effectively within a scrum team to conduct code reviews, share insights, and optimize software development processes, leading to increased productivity and streamlined workflows.
+Collaborated with a small group of UCI students to create a mobile application for ZotBins, a research group that aims to reduce waste and promote sustainability in the UCI campus.
+Applied React Native and Firebase in order to improve the login experience, add a launch animation for the app, and add user-friendly dialogs.
+Led the refactoring of critical components in the codebase to enhance code readability, assist future developers, and implement industry best practices for React.
+Improved Veeva's Clinical Data Management Suite Studio by creating new frontend features with React and GraphQL, adding backend features with Java, and producing scripts and endpoints that measure performance.
+Implemented a Python script that analyzes log files with 750,000+ entries and reports inefficient processes in order to help developers resolve production issues and reduce log search time from several minutes to around 5 seconds.
+Designed a REST endpoint in Java that calculates specific metrics so that developers, product managers, and customers can better understand the performance of their clinical studies.
+Enhanced the Norton Secure VPN backend by addressing security risks with Black Duck, restructuring the internal alarm system with xMatters, and building the initial Microsoft Azure server infrastructure.
+Automated the deployment of Microsoft Azure servers with Ruby on Rails and Terraform in order to reduce complexity and decrease costs for certain VPN regions.
+Reduced the number of logs produced per day by Ruby on Rails workers from 9 million to 250,000 to decrease AWS CloudWatch expenses, eliminate redundancy, and improve the debugging experience for developers.
+Developed in a CI/CD pipeline using the Agile framework, and actively participated in sprint plannings, retrospectives, and daily stand-ups.
+Upgraded and optimized legacy Python 2.7 scripts to Python 3.9, implementing performance enhancements that significantly improved script efficiency and execution speed.
+Implemented Natural Language Processing (NLP) techniques to analyze the sentiment of California State legislator utterances during hearings, enabling the calculation and interpretation of sentiment polarity to understand legislative trends to votes and decisions.
+Developed a proof of concept of AWS Omics integration into Fred Hutch's (a local non-profit cancer research center) genome database, resulting in improved efficiency of genomic analyses and significant reduction of cost. 
+Collaborated closely with client’s data team to strategize comprehensive project implementation, discuss optimal tradeoffs, propose improvements, and iterate on designs. 
+Deployed AWS CloudFormation stacks using S3 Buckets, DynamoDB, and Lambdas (python) and actively utilized Git and Agile methodologies to maintain successful version control within a cross-functional team environment.
+Increased consistency and accuracy of firmware codebase to use monotonic time functions when calculating timestamp deltas to prevent time-jump bugs. 
+Researched, implemented, and tested buzzer functionality in device panels by working with a RTOS microcontroller to send messages from the gateway to root to trigger a piezobuzzer with PWM signals.
+Learned about developing technologies such as Artificial Intelligence, 5G, Autonomous Driving, Cloud Computing, etc.
+Developed creative solutions using Intel technologies to solve issues affecting society today
+Worked in a team to create an augmented reality escape room and presented the product in front of community members, resulting in praise from Laney College President and Intel Executives.
+Engaged in a 10 week long internship with fellow high school students from around the Bay Area to create 2 interactive exhibits with the purpose to provide an educational yet immersive experience to an intergenerational public
+Contributed to the Robot Petting Zoo by working with a team to design a responsive fish utilizing various digital tools, such as HummingBird, Scratch, and Arduino
+Worked with a team to build an Augmented Reality Box with a theme about Urban Landscapes, their energy consumptions, and how their carbon footprints impact the world with the use of iterative design, circuit prototyping, MITAppInventor, leadership, and communication.
+Working closely with the marketing team and prioritizing mobile responsiveness and user-friendly design to develop landing pages for the OpenPark website.
+Preprocessed and cleaned dataset of college applicant messages as organized Pandas dataframes
+Applied NLP techniques like TF-IDF and POS tagging to find commonly asked questions by applicants before they commit to Cal Poly
+Trained Support Vector Machine model to conduct sentiment analysis with 70% prediction accuracy 
+Presented data-driven insights with visualizations for DEI at Intercollegiate Research Symposium
+Worked on full stack development of search infrastructure, designing, implementing, and testing features related to search personalization and enterprise searching SDKs. 
+Assisted in the creation of a scalable cloud API built on the Salesforce platform.
+Tested and contributed to the creation of a custom Apache spark connection service between platforms.
+Participated in the agile development methodologies, gaining valuable hands-on experience in iterative and incremental software development within a large codebase.
+Maintain large code base with over 100 unique PHP objects used across 5 production websites and over 75 plugins
+Overhaul core events page front end to improve pagination of events and grouping of events by tense in monthly view
+Spearhead metadata type conversion improvements for library records with MySQL and PHPUnit
+Revamp outdated image insertion mechanism for blog posts by refactoring WYSIWYG text editor and retrofitting new capabilities on over 600 existing blog entries
+Enhance XML reader for importing records by adding support for saving images and files
+Engineered full-stack application using Vue.js, Spring Boot, Docker, MySQL to simplify Salesforce org configuration
+Developed RESTful API with onion architecture to streamline endpoints for data retrieval and logging into Salesforce
+Synthesized HTTP request and response model for CSRF protection and proper endpoint usage
+Incorporated unit test code coverage using Vitest and JUnit to ensure app functionality
+Integrated Apex unit tests against domain-dependent URLs in production orgs to ensure seamless link updating
+Collaborated on a team of engineers in an agile environment to provide updates and receive constructive code review
+Developing software solutions to fit the operational needs of local San Luis Obispo nonprofit organizations using full-stack development.
+Engage with 7 team-members in weekly meetings focusing on frontend/backend approaches, database management, and product design
+Leverage React and Redux to configure reusable, user-friendly components while enhancing frontend organization throughout the site
+Utilize Express and Mongoose to manage user data validation, API endpoints, schemas, and handling of backend processes
+Co-lead the development of an innovative cloud-based system to optimize Search and Rescue operations
+Simplify the complex structure of the search and rescue system into a user-friendly format
+Store user submissions in Google Firebase and implement a centralized interface to present submissions in an arranged, intuitive format
+Manage usability testing to guide product growth, measuring the effectiveness of design choices such as form structure, labeling, and navigation
+Refactored redundant code to reduce complexity, length, and working memory to improve app and API runtime
+Established a unit testing system using JSON data to preserve API endpoint functionality and maintain the software development life cycle
+Composed clear documentation on new code performance and insights to improve the efficiency of future engineering and workflow
+Designed a template, used on 300+ tickets, to document software defect severity and impacts. 
+Resolved 2+ software defects per day by collecting information from 20+ software safety engineers.
+Managed a safety dashboard and participated in daily meetings to discuss potential safety hazards to the system.
+Collaborated with the mobile and profile teams to develop and enhance iOS applications using both SwiftUI and UIKit, contributing to user interface design and user experience improvements
+Utilized SonarQube to perform code analysis and identify areas for code quality improvement, ensuring the delivery of high-quality, maintainable software
+Implemented SwiftLint to enforce coding standards and improve code consistency, leading to cleaner and more readable codebase
+Spearheaded the creation of a Swift package to streamline the adoption of SwiftUI components across the team's projects, increasing development efficiency and code consistency during the transition
+Participated in agile development processes, attending stand-up meetings, sprint planning, and retrospectives to ensure project milestones were met on schedule
+Worked in collaboration with Cay Horstmann, a senior developer, professor, and author, for the continued development of his open-source project, CodeCheck, which has thousands of users worldwide and provides users with an author-friendly autograder for coding assignments
+Pioneered a new feature to hide tests from students at the author’s discretion in order to prevent students from tailoring their solutions to pass given test cases and not solve the general problem.
+Delivered a solution-based method to censor parts of the report using object-oriented principles
+Collaborated with peers to identify issues, brainstorm suitable solutions, and deliver final results in the form of a final video while periodically providing project reports and milestone updates to supervisor
+Automated City Farm SLO’s volunteer registration process using a full-stack web application.
+Designed a calendar-based homepage with Redux state management and custom form validation to ensure reliability.
+Created a RESTful API in Express and Mongoose to enable efficient data retrieval and modification.
+Attended weekly meetings on backend and frontend development, database management, and project design
+Designed an intuitive data collection webpage to ensure reliability during critical search and rescue operations.
+Led the development of a dynamic form generation system in React to eliminate 96% of redundant code.
+Managed version control, feature branching, and code reviews with Git to create an organized developer workflow.
+Conducted usability testing to optimize functionality and guide product development
+Delivered weekly features exceeding expectations to a team of Cal Poly CS faculty, industry leaders, and volunteers.
+Redesigned querying and filtering functions in the API to reduce memory usage and code complexity by 35%.
+Developed automated tests to ensure the stability of Django endpoints and allow for convenient troubleshooting.
+Documented code functionality and testing processes to improve the efficiency of future programming.
+Used agile methodologies and Trello software to accurately track sprints for project management.
+Creating a full-stack scheduling application for non-profit organization, Partners In Equestrian Therapy (PET), in San Luis Obispo area 
+Working with team of software developers, tech leads and product manager 
+Attending weekly sprint meetings with team
+Scoped, developed and collaborated on new, backend API features for web-based application: Actian Integration Manager, an elastic cloud-based platform that enables the design, deployment, and management of web-based integrations
+Presented design documents with logical and physical data model UML’s along with Figma wireframes for UI changes and uploaded documentation of project feature through confluence
+Implemented code changes utilizing Spring, wrote unit tests for 100% code coverage, presented feature and technical architecture to DataCloud Engineering team and to Actian company
+Merged and deployed changes to Dev, Test and Stage Kubernetes Clusters using Jenkins and ArgoCD
+Performed an examination of research trends among faculty members from diverse ethnic backgrounds in California, with the aim of promoting diversity
+Achieved a 93% accuracy rate when predicting ethnicities using face and name using a random forest model that combines the Namsor and Clarifai APIs
+Utilized Selenium and BeautifulSoup to web scrape data on 1000+ Olympic Athletes
+Automated Multi Step Washing System that uses 12 different devices to clean 500+ barrels daily.
+Conducted extensive testing and debugging of the automation process using a MicroLogix PLC.
+Designed an operator interface panel that grants users the flexibility to control the automation sequence in either manual mode or automatic mode.
+Manage and generate new content pages for 23 subdomains with over 10,000+ users.
+Redesign and optimize subdomains and their templates to allow for accessibility standards (ATI) and better usability.
+Troubleshoot and debug code ensuring compatibility with devices, browsers, and operating systems.
+Developed features on Kaiser Permanente's iOS application using MVC design pattern, working extensively with Swift, Xcode, and Interface Builder.
+Designed and implemented various UI features, such as TableViews and Tooltips, using both Storyboards and XIB files.
+Practiced test-driven development with unit and functional tests.
+Worked in an agile environment in close with the team; reported project progress regularly.
+Redesigned LoopNet's Saved Searches page, providing a more user-friendly layout using JavaScript/HTML/CSS.
+Ensured cross-browser compatibility, collaborated with teams in Agile software development, and conducted code reviews for quality improvement
+Designed a database and developed a program to backup thousands of posts, users, comments, and tags from an existing internal developer forum into that database for easy analysis and integration with other internal knowledge sources, using a combination of REST API endpoints and web scraping.
+Created a proof-of-concept developer chatbot using Azure OpenAI service with the data and thousands of internal wiki pages.
+Migrated Ryde's website from React.js to Next.js, improving performance and scalability for future development. 
+Built interactive dashboards on the admin site to track KPIs like post activity, deletion/activation reasons, & marketing sources. 
+Developed a user-friendly webpage that enabled the marketing team to send targeted push notification campaigns (18,000+ sent during my time there).
+Used multiple technologies to assist in development of the Homefleet Automation Library
+Implemented complex solutions using Object Oriented Principles
+Worked with Python, Docker, noSQL, and more
+Designed and implemented software as a part of the calibration team
+Created software solutions in Python and C#, interfacing with a SQL database,
+Improved validation testing efforts, leading to greatly reduced validation times (24+ hours to <5 seconds)
+Presented my work in front of 50+ engineers and management
+Communicated with team members to maximize efficiency
+Completed boot camp training to become proficient in front-end development, including HTML, 
+Javascript/Typescript, and the MERN stack
+Worked with Wilshire Health and Community and used Full Stack Development with Typescript, React, and AWS to build a donation-tracking website.
+Worked with the CreatorCad Team to propose projects and solve issues with the existing AR program in Unity to create test builds and make better software for users.
+Helped restructure the IOS app with UI changes for ease of use and assisted with building an MVP called Tags for designers to tag errors in their AR builds
+Learned to work in a fast-paced environment in a startup, built better communication skills with team members, and created new relationships with the CEO, tech lead, and fellow workers.
+Compiled LinkedIn Employee Data through competitive analysis through web scraping in Python
+Analyzed high-performance ML Systems and identified key data structures in the existing algorithms
+Shadowed experienced employees to learn about the work environment in a machine-learning company
+Developed a mental health awareness platform that features a searchable database of resources and a user-friendly interface built using React and Figma.
+Implemented a back-end server using Node.js/Express middleware to communicate with a MongoDB database, allowing users to save and retrieve data in real-time.
+Trained an inception CNN to classify images from surveillance systems as fights which had a prediction accuracy of 89%
+Completed a course on AWS (Amazon Web Services) Academy Cloud Architecting.
+Extracted biomass data using 10 segregated GeoJSON files from the California Forest Observatory API using the Beautiful Soup library in Python.
+Develop a web application using ArcGIS JavaScript API for Department of Homeland Security to analyze the risk of Unmanned Aircraft Systems that violate Federal Aviation Administration airspace laws
+Visualize, manipulate, and animate data to convey relevant realtime information about the time, location, and nature of airspace infractions
+Interface 1:1 with a software engineering mentor and work alongside two other interns in the same mission space shipping similar software
+Full Stack Engineering Intern for a software development start up
+Part of the Cal Poly Center for Innovation and Entrepreneurship program
+Follow Agile development processes, utilize Jira, GItHub, and Confluence to organize team goals and structures
+Biweekly development meetings to ensure progress is being maintained
+Designed, wrote and implemented over 70 test plans and cases for various components of the products
+Tests were merged into Jenkins pipelines for regular builds of the application
+Applied Selenium, TestNG, and Maven frameworks integrated with Java for testing 3 API’s and UI
+Contributed to writing 100% coverage tests for the A360 business process automation platform to assist with the latest version release
+Programmed the interactive bot on the website with the software development department using a Neural Network with Javascript frameworks
+Assisted senior developers in making the MAYA Bot’s voice clearer using Python and Java to parse through and clear 7 other frequencies
+Prepared and submitted reports and other documentation to assist development team members
+Adapted metrics from static analytics reports to a collection of dynamic, filter-driven pages to provide electrical utility partners with advanced insights into consumer charging behavior by writing GraphQL/SQL queries with Python post processing to populate customized Chart.js charts.
+Developed a series of interactive, synchronized mixed charts to compare actual energy loads and vehicle plugin times with various counterfactuals to aid the sales team in demonstrating the company's impact.
+Collaborating with leaders of the WUI FIRE Institute to design and rebuild their website from scratch, achieving a 70% increase in rendering speeds.
+Converted the existing Wordpress site to a Headless CMS in order to provide stakeholders an interface for adding and updating information that they had experience with.
+Worked within Cal Poly University design constraints and adhered to them to create a fully responsive website that delivers a seamless experience across web and mobile devices.
+Refactored existing codebase to utilize Firebase serverless functions.
+Implemented new features to calendar system, as well as allowing admins to manage shifts on an individual basis.
+Reengineered user profile interface to accommodate ratings, reviews, milestones, and achievement badges for SLO’s flagship rideshare application
+Utilizing the FullCalendar API and MERN stack, I spearheaded the development of an administrative calendar for Habitat for Humanity SLO's donation scheduling platform
+Integrated mobile viewing, reworking formatting to address code repetition and debugging media queries 
+Upheld coding standards and learned best Git practices
+Developed a natural language search engine for real estate listings utilizing large language models and AWS services such as Lambda, EKS, DynamoDB and services such as Docker, Kubernetes, React
+Working with team to extend application services in payroll software, developing features with highly object oriented design, and iterating quickly in agile process.
+Researching and prototyping rendering techniques and simulation systems in Unreal Engine. Collaborating with Artists and Technical Artists to develop tools they can use to craft interactive experiences.
+Work in a team to maintain and update backend and frontend of Publisher Experience of Amazon Books
+Fix bugs, complete unfinished features, add features that improve user experience
+Migrate and integrate backend service with existing code to Amazon Web Services
+Developed an intuitive video sharing feature, giving students/teachers the ability to upload and preview videos of their ML based academic plans.
+Boosted user traffic by 50% and 10% lower app bounce rate.
+Assessed Google Cloud Platform (GCP), Firebase, and Amazon Web Services and realized GCP as the best option for hosting and streaming video
+taking into consideration the cost, security, and ease of use of the solutions.
+Engineered a REST API to facilitate CRUD operations on a GCP database using Django. Designed and implemented a user interface in Flutter,
+providing users ability to preview video plans rendered via the API. The API endpoint notably optimized the access latency of the database by 5%.
+Delivered an application to reserve outdoor sports rental equipment across 50 stores in San Luis Obispo.
+Recreated the user profile view page in Flutter enhancing user experience by accessing stored profile pictures in AWS S3 server buckets. Increased user adoption by 30%.
+Launched a ride sharing web application embraced by 22,000 students to publish and reserve rides across California.
+Created a landing page using ReactJS/Node.js, and integrated with the npm backend backed by MySQL for the database.
+Published a search bar that required a start and end locations and ride dates powered by Google Maps Places and Geocoder Platform APIs, boosting app navigation by 200%.
+Established a testing framework to validate API performance for inventory requests catering to 50,000+ stores in the Philippines.
+Enhanced error processing by automating data pipelines to test API functionality utilizing Python, Flask and Apache Spark. Attained 95% test accuracy
+Spearheaded the end-to-end development of multiple large-scale projects, overseeing all stages from planning to implementation and successful launch.
+Collaborated closely with cross-functional team members, actively participating in tasks such as writing and executing unit tests, conducting manual tests, and performing thorough code reviews.
+Streamlined financial operations by developing a scripting tool that generated a comprehensive global payment matrix, simplifying configuration processes for the finance operations team.
+Enhanced user experience by creating a dynamic bank filtering feature, utilizing a master list to provide customers with personalized account configurations based on their specific needs.
+Implemented a customer-centric front-end feature that effectively communicated the expiration time of a customer's tax status through visually appealing banners and informative inter-sectional warnings.
+Optimized internal account servicing by enabling the search functionality to include non-dominant vendor codes on accounts with multiple vendor codes.
+Contributed to the expansion of platform capabilities by developing a feature that allowed sub-configuration IDs to function as main configuration IDs, enhancing flexibility and customization options.
+Significantly improved efficiency for customers and business clients by introducing a key front-end feature in the account creation portal, enabling easy accessibility and streamlined account setup.
+Managed 23 subdomains handling 10,000+ users, generating new pages for new content
+Consulted for Cal Poly by redesigning a subdomain to actively meet accessibility (ATI) standards
+Optimized SEO through redesigned information architecture, newly coded web page templates, and content management, and a mega menu for better usability
+Developed a CI/CD GitOps style system using Kubernetes, Github Actions, Artifactory, and ArgoCD
+Automated Deployment from IDE to Integration testing, Image creation, and Kubernetes deployment through Github actions runners and ArgoCD.
+Developed a high availability multi-node system with k3s cluster scaling and shrinkage utilizing Ansible for Virtual Machine creation, configuration, and deletion.
+Designed a full-stack architecture for an application monitoring tool.
+Wrote automation scripts that executes via scheduler.
+Refactored existing code base with improved runtime by 20%.
+Completed Single-entry-chat project and raised chat capture rate by 2% (saves 100-200k annually)
+Worked on help screen in phone app with light and dark mode (Flutter, Dart)
+Added single-entry point for chat on contact page (React, JavaScript)
+Updated layout of logged-out contact page (WordPress, html, css)
+Worked on a Web Application using TypeScript, React, and Visual Studio Code
+Collaborated with a team of about 25 people through GitHub with extensive testing and code coverage of above 95%
+Used Lerna, Jest, Enzyme 
+Worked on Honeywell’s package of customized React Components
+Gained basic experience with CRUD operations
+Developed two key features for the Ryde app by utilizing user feedback through dozens of interviews.
+Leveraged Google Maps Platform and Apple Maps to develop live location share feature.
+Leveraged MapBox API to create optimized route for drivers to follow during Rydes.
+Both features allow for more smooth and efficient pick ups/drop offs and solved major pain points for drivers.
+Advancements further enable Ryde to expand across California.
+Worked on user data handling/validation component of Metro T-Portal product.
+Developed program to improve scalability and processing time over old component.
+Program reads and validates unstructured data, populates Salesforce DB, and structures and segregates data.
+Program leverages validated data to authorize T-Mobile access credentials for third party customer care workers within call centers.
+Improved processing time by over 80% and included ability to read multiple file types.
+Used Java and Salesforce (Apex, SOSL, SOQL) to process data through Salesforce Functions. 
+Obtained several accomplishment badges and grew Salesforce knowledge through Salesforce Trailhead.
+Collaborated with other developers and PMs, solidified teamworking skills, made strong connections. Presented project to senior leadership.
+My project was to create a website/mobile app that extracurricular youth programs could use to sign up students, communicate with parents and instructors, and report feedback regarding student progress.
+Technical skills used involved NextJS, React, JavaScript, and HTML+CSS.
+Collaborated on a team of other devs and UI/UX designers.
+Introduced new features for internal web app that eliminated manual double entry and cross-referencing, increasing tool productivity by 50%
+Took initiative to broaden the scope of the project by upgrading existing interfaces for enhanced user experience
+Used SQL, .NET, JavaScript, jQuery, HTML, and CSS to address business requirements across the full stack
+Led a 5-person scrum team focused on defect management; oversaw daily standups, biweekly sprint planning, and backlog scrumming—accelerating delivery of software 
+Created scripts to standardize onboarding workflow through links, tools, PoC’s and instructions; streamlined offboarding workflow and ensured proper clean-up processes through automated procedures
+Created ability to bulk upload templates using Python, decreasing execution time by more than 75%
+Managed the JCCH membership database and collaborated in a team to redesign their future database implementation.
+Worked alongside website manager to perform routine maintenance and upgraded site layout with new toggles and features using HTML and CSS.
+Collaborated with other teams to determine appropriate data models and destination table designs for applier data transformation
+Led multiple design reviews and collaborated with colleagues to optimize the applier design prior to development
+Designed and developed an applier in Java that sources JournalDB stream messages and propagates data to DynamoDB tables in a clobbered manner while maintaining data consistency
+Participated in daily standups, sprint retrospectives, code reviews, and sprint planning according to standard Agile practices
+Developed unit tests with JUnit, Mockito, and Guice to validate applier functionality and maintain 100% code coverage
+Facilitated the learning of relevant technologies including React.js, Redux, Node.js, and AWS to boost team member contributions
+Led weekly sprints and tracked tasks using Agile methodologies for a team of 8 developers
+Spearheaded development on the calendar and volunteer tracker for RISE and Stand Strong
+Developed the main event website and application portal for 1000+ expected users using React.js
+Built the sponsors component which enables sponsors to easily draft an email to the SLO Hacks sponsorship team in 1 click
+Developed API endpoints using Express.js which allows authenticated users to submit and store an application into a DynamoDB table
+Wrote Flutter code for a new profile screen in the production mobile app which included 5 clickable widgets, navigation between multiple screen, and additional UI components
+Used feature branches to develop alongside senior developers
+Learned Dart programming language from Flutter SDK in under 10 weeks
+Used agile methodologies and Jira software to accurately track sprints for project manager
+Used Git and GitHub to manage version control for features and multi-sprint development alongside senior developers
+Developing a volunteer management website (mobile and desktop) for Lumina Alliance
+Utilizing Chakra UI and ReactJS to create front end web pages
+Participating in agile development by completing weekly and quarterly milestones
+Participated in a three week training course to learn and practice the fundamentals of R
+Generated a script to computationally create Canvas quizzes given an Excel sheet of questions and answers and quiz setting preferences
+Collaborated with a team of 3 other interns to design and build a comprehensive property management tool for Homes.com's network admins and customer care.
+Engineered .NET endpoints leveraging the Backend-For-Frontend (BFF) model for property search results based on city, address, or property key, incorporating features such as filtering, sorting, and pagination.
+Implemented image lazy loading to enhance webpage performance, utilizing both the Intersection Observer API in the frontend and a stepped endpoint approach in the backend to defer image source loading.
+As part of a larger team, contributed to automating testing using Selenium, significantly reducing homes.com pre-release testing times from 22 hours to approximately 3 hours.
+Pushed code to production regularly and contributed to the launch of the Homes.com product
+Designed and implemented an algorithm to remove unwanted intersections efficiently from map polygons drawn by the user, resulting in an improved map search user experience
+Implemented a function in the .NET server side to add categorized error logs to payload on request errors, enabling cause of errors to be viewed in Datadog which resulted in an increased debugging speed across teams
+Established a function that calculates the difference between the width of the screen including and excluding the scrollbar resulting in ‘Homes’ header logo to be centered on every page and in every device
+Leveraged knowledge in C# & .NET, Vue.js, User-Agents, Unit testing with Jest, and device testing with BrowserStack
+Programmed an automated feature that allows authenticated users to add PowerBI reports onto a web platform
+Transitioned data pipelines from schedule based to event driven triggers that will improve efficiencies of processing data in data lakes
+Implemented UI design facets on webpages that contributed to upholding the brand standard
+Programming user-friendly features on mobile and web platforms for the Lumina Alliance to help them improve the functionality of their operations
+Developing ground software to enable data ingestion in mission control systems
