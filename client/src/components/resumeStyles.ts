@@ -1,9 +1,7 @@
 import { StyleSheet } from "@react-pdf/renderer";
 import random from "random";
 
-// TODO - add more variants
 const fontFamilies = {
-  // TODO set font sizes
   "Times New Roman": {
     Regular: "Times-Roman",
     Bold: "Times-Bold",
@@ -50,18 +48,30 @@ const colors = [
   "#37667e",
 ];
 
-export const getVariantStd = () => {
+export const getVariantStd = (year: number, numEntries: number) => {
   // select random font
   const font: FontFamilies =
     random.choice(["Times New Roman", "Helvetica", "Courier"]) ||
     "Times New Roman";
   const fonts = fontFamilies[font];
+  let fontSizeBias = (4 - year) * 1.5;
+  if (font == "Courier") {
+    fontSizeBias = fontSizeBias + 1;
+  }
 
   // select random header color
   const headerColor = random.choice(colors) || "#000000";
 
   // randomize capitalization
   const capitalize = random.float() > 0.5 ? "uppercase" : undefined;
+
+  // decide line height based on number of entries to fill page
+  let lineHeight = 1;
+  if (numEntries < 3) {
+    lineHeight = 1.5;
+  } else if (numEntries == 3 && year > 2) {
+    lineHeight = 1.25;
+  }
 
   return StyleSheet.create({
     viewer: {
@@ -71,7 +81,8 @@ export const getVariantStd = () => {
     page: {
       fontFamily: fonts.Regular,
       alignItems: "center",
-      marginTop: 20,
+      marginTop: 15,
+      lineHeight: lineHeight,
     },
     header: {
       width: "85%",
@@ -92,19 +103,19 @@ export const getVariantStd = () => {
       marginLeft: 10,
     },
     section: {
+      marginTop: 10,
       width: "85%",
-      marginTop: 15,
     },
     sectionTitle: {
       fontFamily: fonts.Bold,
-      fontSize: fonts.sizes.title,
+      fontSize: fonts.sizes.title + fontSizeBias,
       borderBottom: random.float() > 0.7 ? "1px solid " + headerColor : "none",
       color: headerColor,
       textTransform: capitalize,
     },
     sectionSubTitle: {
       fontFamily: fonts.Bold,
-      fontSize: fonts.sizes.text,
+      fontSize: fonts.sizes.text + fontSizeBias,
       marginTop: 5,
       marginLeft: 10,
     },
@@ -113,14 +124,14 @@ export const getVariantStd = () => {
     },
     sectionContentText: {
       fontFamily: fonts.Regular,
-      fontSize: fonts.sizes.text,
+      fontSize: fonts.sizes.text + fontSizeBias,
       marginTop: 2,
       marginLeft: 10,
     },
     rowPrim: {
       flexDirection: "row",
       justifyContent: "space-between",
-      fontSize: fonts.sizes.subTitle,
+      fontSize: fonts.sizes.subTitle + fontSizeBias,
     },
     rowSec: {
       flexDirection: "row",
@@ -131,7 +142,7 @@ export const getVariantStd = () => {
       marginBottom: 5,
     },
     bulletPoint: {
-      fontSize: fonts.sizes.text,
+      fontSize: fonts.sizes.text + fontSizeBias,
       marginLeft: 10,
       marginTop: 1.5,
     },

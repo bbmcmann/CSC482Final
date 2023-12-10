@@ -3,9 +3,9 @@ import random
 import sys
 
 import courses
-import header
-import gen_skills
 import gen_experience
+import gen_skills
+import header
 
 cwd = os.getcwd()
 sys.path.append(cwd + '/../')
@@ -53,6 +53,7 @@ def generateStudent():
     #       ],
     # }
     genBio = bio.get_bio(genHeader['name'], skills, end, year)
+    degree = "B.S." if year < 5 else "M.S."
     
 
     return {
@@ -66,7 +67,7 @@ def generateStudent():
           'education': {
             'school': "California Polytechnic State University, San Luis Obispo",
             'location': "San Luis Obispo, CA",
-            'degree': "Bachelor of Science, Computer Science",
+            'degree': degree + " Computer Science",
             'gpa': generate_basic.generate_gpa(),
             'start': start,
             'end': end,

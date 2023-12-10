@@ -1,5 +1,6 @@
-import random
 import os
+import random
+
 import pandas as pd
 
 bullet_file = os.getcwd() + '/../data/bulletpoints.txt'
@@ -74,7 +75,7 @@ def get_work(year):
 
 def get_projects(year):
     projects = []
-    plen = max(1, 1 + (year//2) - random.randint(0, 1))
+    plen = max(2, 1 + (year//2) - random.randint(0, 1))
 
     for i in range(plen):
         projectyear = 2023 - i

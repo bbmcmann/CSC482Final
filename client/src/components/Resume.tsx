@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from "@react-pdf/renderer";
+import random from "random";
 import { useEffect, useState } from "react";
 import { getVariantStd } from "./resumeStyles";
 
@@ -45,21 +46,122 @@ export type ResumeProps = {
   };
 };
 
-/*
-- switch to 2 column layout
-order of sections matter
-first years probably have experience in bottom
-*/
 export default function Resume(props: ResumeProps) {
-  const [styles, setStyles] = useState(getVariantStd());
+  const numEntries = props.experience.length + props.projects.length;
+  const [styles, setStyles] = useState(getVariantStd(props.year, numEntries));
 
   const onClick = () => {
-    setStyles(getVariantStd());
+    setStyles(getVariantStd(props.year, numEntries));
   };
 
   useEffect(() => {
-    setStyles(getVariantStd());
-  }, [props]);
+    setStyles(getVariantStd(props.year, numEntries));
+  }, [props, numEntries]);
+
+  const experienceSection = (
+    <View style={styles?.section}>
+      <Text style={styles?.sectionTitle}>Experience</Text>
+      <View style={styles?.sectionContent}>
+        {props.experience.map((exp) => (
+          <View key={exp.company + exp.start} style={styles?.experienceSection}>
+            <View style={styles?.rowPrim}>
+              <Text style={styles?.sectionSubTitle}>{exp.position}</Text>
+            </View>
+            <View style={styles?.rowSec}>
+              <Text style={styles?.sectionContentText}>{exp.company}</Text>
+              <Text style={styles?.sectionContentText}>
+                {exp.start} - {exp.end}
+              </Text>
+            </View>
+            {exp.description.map((desc, i) => (
+              <Text key={i} style={styles?.bulletPoint}>
+                • {desc}
+              </Text>
+            ))}
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+
+  const projectSection = (
+    <View style={styles?.section}>
+      <Text style={styles?.sectionTitle}>Projects/Outside Experience</Text>
+      <View style={styles?.sectionContent}>
+        {props.projects.map((proj) => (
+          <View key={proj.role} style={styles?.experienceSection}>
+            <View style={styles?.rowPrim}>
+              <Text style={styles?.sectionSubTitle}>{proj.name}</Text>
+              <Text style={styles?.sectionContentText}>
+                {proj.start} - {proj.end}
+              </Text>
+            </View>
+            {proj.role && (
+              <View style={styles?.rowSec}>
+                <Text style={styles?.sectionContentText}>{proj.role}</Text>
+              </View>
+            )}
+            {proj.description.map((desc, i) => (
+              <Text key={i} style={styles?.bulletPoint}>
+                • {desc}
+              </Text>
+            ))}
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+
+  const skillsSection = (
+    <View style={styles?.section}>
+      <Text style={styles?.sectionTitle}>Skills</Text>
+      <View style={styles?.sectionContent}>
+        <Text style={styles?.sectionSubTitle}>
+          Languages:&nbsp;
+          <Text style={styles?.sectionContentText}>
+            {props.skills.languages.join(", ")}
+          </Text>
+        </Text>
+        <Text style={styles?.sectionSubTitle}>
+          Tools:&nbsp;
+          <Text style={styles?.sectionContentText}>
+            {props.skills.tools.join(", ")}
+          </Text>
+        </Text>
+      </View>
+    </View>
+  );
+
+  const contentOrderHelper = () => {
+    if (2 * props.experience.length >= props.projects.length) {
+      return (
+        <>
+          {experienceSection}
+          {projectSection}
+        </>
+      );
+    } else {
+      return <>{projectSection}</>;
+    }
+  };
+
+  const contentOrder = () => {
+    if (random.float() < 0.3) {
+      return (
+        <>
+          {skillsSection}
+          {contentOrderHelper()}
+        </>
+      );
+    } else {
+      return (
+        <>
+          {contentOrderHelper()}
+          {skillsSection}
+        </>
+      );
+    }
+  };
 
   return (
     <div>
@@ -91,9 +193,6 @@ export default function Resume(props: ResumeProps) {
                   <Text style={styles?.sectionSubTitle}>
                     {props.education.school}
                   </Text>
-                  <Text style={styles?.sectionContentText}>
-                    {props.education.location}
-                  </Text>
                 </View>
                 <View style={styles?.rowSec}>
                   <Text style={styles?.sectionContentText}>
@@ -113,85 +212,7 @@ export default function Resume(props: ResumeProps) {
                 </Text>
               </View>
             </View>
-            {/* EXPERIENCE SECTION */}
-            <View style={styles?.section}>
-              <Text style={styles?.sectionTitle}>Experience</Text>
-              <View style={styles?.sectionContent}>
-                {props.experience.map((exp) => (
-                  <View
-                    key={exp.company + exp.start}
-                    style={styles?.experienceSection}
-                  >
-                    <View style={styles?.rowPrim}>
-                      <Text style={styles?.sectionSubTitle}>
-                        {exp.position}
-                      </Text>
-                    </View>
-                    <View style={styles?.rowSec}>
-                      <Text style={styles?.sectionContentText}>
-                        {exp.company}
-                      </Text>
-                      <Text style={styles?.sectionContentText}>
-                        {exp.start} - {exp.end}
-                      </Text>
-                    </View>
-                    {exp.description.map((desc, i) => (
-                      <Text key={i} style={styles?.bulletPoint}>
-                        • {desc}
-                      </Text>
-                    ))}
-                  </View>
-                ))}
-              </View>
-            </View>
-            {/* PROJECTS/OUTSIDE EXPERIENCE SECTION */}
-            <View style={styles?.section}>
-              <Text style={styles?.sectionTitle}>
-                Projects/Outside Experience
-              </Text>
-              <View style={styles?.sectionContent}>
-                {props.projects.map((proj) => (
-                  <View key={proj.role} style={styles?.experienceSection}>
-                    <View style={styles?.rowPrim}>
-                      <Text style={styles?.sectionSubTitle}>{proj.name}</Text>
-                      <Text style={styles?.sectionContentText}>
-                        {proj.start} - {proj.end}
-                      </Text>
-                    </View>
-                    {proj.role && (
-                      <View style={styles?.rowSec}>
-                        <Text style={styles?.sectionContentText}>
-                          {proj.role}
-                        </Text>
-                      </View>
-                    )}
-                    {proj.description.map((desc, i) => (
-                      <Text key={i} style={styles?.bulletPoint}>
-                        • {desc}
-                      </Text>
-                    ))}
-                  </View>
-                ))}
-              </View>
-            </View>
-            {/* SKILLS SECTION */}
-            <View style={styles?.section}>
-              <Text style={styles?.sectionTitle}>Skills</Text>
-              <View style={styles?.sectionContent}>
-                <Text style={styles?.sectionSubTitle}>
-                  Languages:&nbsp;
-                  <Text style={styles?.sectionContentText}>
-                    {props.skills.languages.join(", ")}
-                  </Text>
-                </Text>
-                <Text style={styles?.sectionSubTitle}>
-                  Tools:&nbsp;
-                  <Text style={styles?.sectionContentText}>
-                    {props.skills.tools.join(", ")}
-                  </Text>
-                </Text>
-              </View>
-            </View>
+            {contentOrder()}
           </Page>
         </Document>
       </PDFViewer>
