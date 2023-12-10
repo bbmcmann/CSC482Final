@@ -46,12 +46,6 @@ class RNN(nn.Module):
 
 # main
 if __name__ == '__main__':
-    train_on_gpu = torch.cuda.is_available()
-    if (train_on_gpu):
-        print('Training on GPU!')
-    else:
-        print('No GPU available, training on CPU; consider making n_epochs very small.')
-
     # get data
     train_df = pd.read_csv(os.getcwd() + '/../server/train.csv')
     author = train_df[train_df['author'] == 'EAP']["text"]
@@ -109,13 +103,13 @@ if __name__ == '__main__':
 
 
     def train(inp, target):
-        hidden = decoder.init_hidden().cuda()
+        hidden = decoder.init_hidden()
         decoder.zero_grad()
         loss = 0
 
         for c in range(chunk_len):
-            output, hidden = decoder(inp[c].cuda(), hidden)
-            loss += criterion(output, target[c].cuda())
+            output, hidden = decoder(inp[c], hidden)
+            loss += criterion(output, target[c])
 
         loss.backward()
         decoder_optimizer.step()
@@ -136,8 +130,6 @@ if __name__ == '__main__':
     start = time.time()
     all_losses = []
     loss_avg = 0
-    if (train_on_gpu):
-        decoder.cuda()
     for epoch in range(1, n_epochs + 1):
         loss = train(inp, tar)
         loss_avg += loss
@@ -149,6 +141,29 @@ if __name__ == '__main__':
         if epoch % plot_every == 0:
             all_losses.append(loss_avg / plot_every)
             loss_avg = 0
+
+
+    def evaluate(prime_str='this process', predict_len=100, temperature=0.8):
+        hidden = decoder.init_hidden()
+
+        for p in range(predict_len):
+            prime_input = torch.tensor([word_to_ix[w] for w in prime_str.split()], dtype=torch.long)
+            inp = prime_input[-2:]  # last two words as input
+            output, hidden = decoder(inp, hidden)
+
+            # Sample from the network as a multinomial distribution
+            output_dist = output.data.view(-1).div(temperature).exp()
+            top_i = torch.multinomial(output_dist, 1)[0]
+
+            # Add predicted word to string and use as next input
+            predicted_word = list(word_to_ix.keys())[list(word_to_ix.values()).index(top_i)]
+            prime_str += " " + predicted_word
+        #         inp = torch.tensor(word_to_ix[predicted_word], dtype=torch.long)
+
+        return prime_str
+
+
+    print(evaluate('this process', 40, temperature=1))
 
 
 
