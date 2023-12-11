@@ -7,10 +7,11 @@ import experiences_model
 # ( PATH, NUM_EPOCHS )
 
 batch_to_train_param_list = [
-                    (".\\pytorch_models\experience_model_Maker200.pth", 200)]
-
-already_trained_param_list = [(".\\pytorch_models\experience_model_Maker300.pth", 300),
                     (".\\pytorch_models\experience_model_Maker100.pth", 100),
+                    (".\\pytorch_models\experience_model_Maker50.pth", 50),
+                    ]
+
+already_trained_param_list = [(".\\pytorch_models\experience_model_Maker100.pth", 100),
                     (".\\pytorch_models\experience_model_Maker50.pth", 50)]
 
 
@@ -19,7 +20,7 @@ def test_models():
     print("____TESTING ALL____")
     for settings in already_trained_param_list:
         print("\n\t\tTESTING: " + settings[0][17:] + "\n")
-        experiences_model.test_model(settings[0])
+        experiences_model.test_model(settings[0], 15)
 
 
 # train all models in train_param_list
@@ -31,6 +32,6 @@ def train_models():
 
 
 if __name__ == '__main__':
-    train_models()
+    # train_models()
 
-    # test_models()
+    test_models()
