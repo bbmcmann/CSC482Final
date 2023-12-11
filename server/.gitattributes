@@ -1,0 +1,3 @@
+data/custom_bulletpoints.txt/checkpoint-500/model.safetensors filter=lfs diff=lfs merge=lfs -text
+data/custom_bulletpoints.txt/checkpoint-500/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+data/custom_bulletpoints.txt/model.safetensors filter=lfs diff=lfs merge=lfs -text

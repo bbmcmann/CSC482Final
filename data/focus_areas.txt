@@ -1,0 +1,47 @@
+Artificial Intelligence
+Machine Learning
+Data Science
+Computer Vision
+Natural Language Processing
+Robotics
+Human-Computer Interaction
+Networks and Security
+Database Systems
+Software Engineering
+Full Stack
+Backend Development
+Frontend Development
+Computer Graphics
+Algorithms and Data Structures
+Distributed Systems
+Cloud Computing
+Quantum Computing
+Bioinformatics
+Computational Linguistics
+Cryptography
+Compiler Design
+Programming Languages
+Embedded Systems
+Virtual Reality
+Augmented Reality
+Computer Architecture
+Game Development
+Information Retrieval
+Educational Technology
+Mobile Computing
+Web Development
+Internet of Things
+High-Performance Computing
+Operating Systems
+User Experience
+User Interaction
+Product Management
+Data Mining
+Computer-Assisted Design
+Autonomous Systems
+Software Testing
+Quality Assurance
+Information Security
+Speech and Audio Processing
+Parallel Computing
+Graph Theory

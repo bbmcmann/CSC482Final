@@ -17,12 +17,33 @@ def get_bio(input_name, skills, input_end, input_year):
     skills = get_skills(skills)
 
     # Substitute fields in the bio string
-    formatted_bio = selected_bio.format(name=input_name, adj1 =adjectives[0], adj2=adjectives[1], 
-                                        skill1 = skills[0], skill2 = skills[1], skill3 = skills[3],
-                                        end = input_end, year = get_formatted_year(input_year))
+    formatted_bio = selected_bio.format(name=input_name, 
+                                        adj1 =adjectives[0], 
+                                        adj2=adjectives[1], 
+                                        skill1 = skills[0], 
+                                        skill2 = skills[1], 
+                                        skill3 = skills[3],
+                                        focus_area = get_focus_area(),
+                                        company = get_company(),
+                                        end = input_end, 
+                                        year = get_formatted_year(input_year))
 
     print(formatted_bio)
     return formatted_bio
+
+def extract_company_names():
+    company_names = []
+    with open(os.getcwd() + '/../data/allcompanies.csv', 'r') as file:
+        lines = file.readlines()[1:]  # Skip the first line
+        for line in lines:
+            company_name = line.split(',')[0].strip()
+            company_names.append(company_name)
+    return company_names
+
+def get_company():
+    company_names = extract_company_names()
+    selected_company = random.choice(company_names)
+    return selected_company
 
 def get_adjectives():
 
@@ -32,9 +53,16 @@ def get_adjectives():
 
     # Remove newline characters and select 5 random adjectives
     selected_adjectives = random.sample(adjectives, 5)
-    selected_adjectives = [adj.strip() for adj in selected_adjectives]
+    selected_adjectives = [adj.strip().lower() for adj in selected_adjectives]
 
     return selected_adjectives
+
+def get_focus_area():
+    with open(os.getcwd() + '/../data/focus_areas.txt', 'r') as file:
+        focus_areas = file.readlines()
+    selected_area = random.choice(focus_areas).lower().strip()
+
+    return selected_area
 
 def get_formatted_year(year):
     # Get formatted school year
