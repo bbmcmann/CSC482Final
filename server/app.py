@@ -30,6 +30,11 @@ def generateStudent():
     areacode = generate_basic.get_area_code(homecity)
     genHeader = header.getHeader(areacode)
     year = int(request.args.get('year'))
+    useCustomModel = request.args.get('custom_model')
+    if useCustomModel == "true":
+        useCustomModel = True
+    else:
+        useCustomModel = False
     if year >= 6:
       year = random.randint(1, 5)
     else:
@@ -58,7 +63,7 @@ def generateStudent():
             'end': end,
             'courses': courses.getCourses(year),
           },
-          'experience': gen_experience.get_work(year), #[
+          'experience': gen_experience.get_work(year, useCustomModel), #[
           #   {
           #     'company': "Google",
           #     'location': "Mountain View, CA",
@@ -84,7 +89,7 @@ def generateStudent():
           #     ],
           #   },
           # ],
-          'projects': gen_experience.get_projects(year), #[
+          'projects': gen_experience.get_projects(year, useCustomModel), #[
           #   {
           #     'name': "Artificial CSC Student",
           #     'role': "Creator",

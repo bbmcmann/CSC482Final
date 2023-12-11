@@ -1,4 +1,4 @@
-import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import {FormControl, FormControlLabel, InputLabel, MenuItem, Select, Switch} from "@mui/material";
 import Button from "@mui/material/Button";
 import { useRef, useState } from "react";
 import "./App.css";
@@ -8,12 +8,14 @@ import Resume, { ResumeProps } from "./components/Resume";
 function App() {
   const [bio, setBio] = useState<string | undefined>();
   const [resume, setResume] = useState<ResumeProps | undefined>();
+  const [useCustomModel, setUseCustomModel] = useState<boolean>(false);
   const yearRef = useRef<HTMLSelectElement>();
 
   const onClick = async () => {
     try {
       const response = await fetch(
         "http://localhost:5000/generate?year=" + yearRef.current?.value
+          + `&custom_model=${useCustomModel.toString()}`
       );
       const data = await response.json();
       setBio(data.bio);
@@ -22,6 +24,10 @@ function App() {
       console.error(err);
     }
   };
+
+  const onSwitch = () => {
+    setUseCustomModel(!useCustomModel)
+  }
 
   return (
     <div id="main">
@@ -48,6 +54,12 @@ function App() {
           <MenuItem value={6}>Random</MenuItem>
         </Select>
       </FormControl>
+
+      <FormControlLabel
+          control={<Switch checked={useCustomModel} onChange={onSwitch} />}
+          label={"Use Custom Model"}
+      />
+          
       <Button variant="contained" onClick={onClick}>
         Generate
       </Button>

@@ -2,6 +2,8 @@ import os
 import random
 
 import pandas as pd
+import experiences_model
+
 
 bullet_file = os.getcwd() + '/../data/bulletpoints.txt'
 company_file = os.getcwd() + '/../data/companies.txt'
@@ -53,7 +55,8 @@ project_roles = [
     "Team Member"
 ]
 
-def get_work(year):
+
+def get_work(year, use_custom):
     work = []
     worklen = max(0, year-1-random.randint(0, 1))
 
@@ -61,7 +64,7 @@ def get_work(year):
         workyear = 2023 - i
         bullets = []
         for j in range(3):
-            bullets.append(generate_bullet())
+            bullets.append(generate_bullet(use_custom))
         workinfo = {
             'company': get_company(),
             'start': 'June ' + str(workyear),
@@ -73,7 +76,8 @@ def get_work(year):
         work.append(workinfo)
     return work
 
-def get_projects(year):
+
+def get_projects(year, use_custom):
     projects = []
     plen = max(2, 1 + (year//2) - random.randint(0, 1))
 
@@ -85,7 +89,7 @@ def get_projects(year):
             end = random.choice(['January', 'February', 'March']) + ' ' + str(projectyear + 1)
         bullets =[]
         for j in range(2):
-            bullets.append(generate_bullet())
+            bullets.append(generate_bullet(use_custom))
 
         projectinfo = {
             'name': random.choice(all_projects),
@@ -97,12 +101,22 @@ def get_projects(year):
         projects.append(projectinfo)
     return projects
 
-def generate_bullet():
+
+def generate_bullet(use_custom):
     ###
     # PUT NLP GENERATOR FUNCTION HERE!!!! #
     ###
-
-    return random.choice(all_bullets)
+    ret_bullet = ""
+    if use_custom:
+        # use Ben custom
+        primer_strings = ["Developed a", "Led a", "Assisted in", "Implemented a", "Led the", "Assisted the",
+                          "Worked on", "Collaborated with", "Created a", "Developed web", "Participated in"]
+        model_used = ".\\pytorch_models\experience_model_1.1_100.pth"
+        ret_bullet = experiences_model.make_version1_bullet_point(model_used, 15, random.choice(primer_strings))
+    else:
+        # use Kelly chat gpt
+        ret_bullet = random.choice(all_bullets)
+    return ret_bullet
 
 
 def get_company():
