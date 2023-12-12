@@ -1,5 +1,13 @@
-import {FormControl, FormControlLabel, InputLabel, MenuItem, Select, Switch} from "@mui/material";
+import {
+  FormControl,
+  FormControlLabel,
+  InputLabel,
+  MenuItem,
+  Select,
+  Switch,
+} from "@mui/material";
 import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
 import { useRef, useState } from "react";
 import "./App.css";
 import Biography from "./components/Biography";
@@ -10,12 +18,17 @@ function App() {
   const [resume, setResume] = useState<ResumeProps | undefined>();
   const [useCustomModel, setUseCustomModel] = useState<boolean>(false);
   const yearRef = useRef<HTMLSelectElement>();
+  const [loading, setLoading] = useState(false);
 
   const onClick = async () => {
+    setLoading(true);
+    setBio(undefined);
+    setResume(undefined);
     try {
       const response = await fetch(
-        "http://localhost:5000/generate?year=" + yearRef.current?.value
-          + `&custom_model=${useCustomModel.toString()}`
+        "http://localhost:5000/generate?year=" +
+          yearRef.current?.value +
+          `&custom_model=${useCustomModel.toString()}`
       );
       const data = await response.json();
       setBio(data.bio);
@@ -23,11 +36,12 @@ function App() {
     } catch (err) {
       console.error(err);
     }
+    setLoading(false);
   };
 
   const onSwitch = () => {
-    setUseCustomModel(!useCustomModel)
-  }
+    setUseCustomModel(!useCustomModel);
+  };
 
   return (
     <div id="main">
@@ -56,13 +70,14 @@ function App() {
       </FormControl>
 
       <FormControlLabel
-          control={<Switch checked={useCustomModel} onChange={onSwitch} />}
-          label={"Use Custom Model"}
+        control={<Switch checked={useCustomModel} onChange={onSwitch} />}
+        label={"Use Custom Model"}
       />
-          
-      <Button variant="contained" onClick={onClick}>
+
+      <Button variant="contained" onClick={onClick} disabled={loading}>
         Generate
       </Button>
+      {loading && <CircularProgress />}
       {bio && <Biography bio={bio} />}
       {resume && <Resume {...resume} />}
     </div>

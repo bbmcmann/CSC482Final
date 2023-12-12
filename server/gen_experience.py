@@ -96,7 +96,7 @@ def get_projects(year, use_custom):
         projectName = random.choice(all_projects)
         if use_custom:
             for j in range(2):
-                bullets.append(generate_bullet(use_custom))
+                bullets.append(generate_bullet(use_custom, projectName))
         else:
             bullets = generate_bullet(use_custom, projectName)
 
