@@ -1,9 +1,9 @@
 import os
 import random
 
-import pandas as pd
+import custom_llm
 import experiences_model
-
+import pandas as pd
 
 bullet_file = os.getcwd() + '/../data/bulletpoints.txt'
 company_file = os.getcwd() + '/../data/companies.txt'
@@ -63,14 +63,19 @@ def get_work(year, use_custom):
     for i in range(worklen):
         workyear = 2023 - i
         bullets = []
-        for j in range(3):
-            bullets.append(generate_bullet(use_custom))
+        company = get_company()
+        position = random.choice(work_positions)
+        if use_custom:
+            for j in range(3):
+                bullets.append(generate_bullet(use_custom, company, position))
+        else:
+            bullets = generate_bullet(use_custom, company, position)
         workinfo = {
-            'company': get_company(),
+            'company': company,
             'start': 'June ' + str(workyear),
             'end': 'September ' + str(workyear),
             'location': 'California',
-            'position': random.choice(work_positions),
+            'position': position,
             'description': bullets
         }
         work.append(workinfo)
@@ -88,11 +93,15 @@ def get_projects(year, use_custom):
         else:
             end = random.choice(['January', 'February', 'March']) + ' ' + str(projectyear + 1)
         bullets =[]
-        for j in range(2):
-            bullets.append(generate_bullet(use_custom))
+        projectName = random.choice(all_projects)
+        if use_custom:
+            for j in range(2):
+                bullets.append(generate_bullet(use_custom))
+        else:
+            bullets = generate_bullet(use_custom, projectName)
 
         projectinfo = {
-            'name': random.choice(all_projects),
+            'name': projectName,
             'role': random.choice(project_roles),
             'start': 'September ' + str(projectyear),
             'end': end,
@@ -102,10 +111,7 @@ def get_projects(year, use_custom):
     return projects
 
 
-def generate_bullet(use_custom):
-    ###
-    # PUT NLP GENERATOR FUNCTION HERE!!!! #
-    ###
+def generate_bullet(use_custom, company, position=None):
     ret_bullet = ""
     if use_custom:
         # use Ben custom
@@ -115,7 +121,10 @@ def generate_bullet(use_custom):
         ret_bullet = experiences_model.make_version1_bullet_point(model_used, 15, random.choice(primer_strings))
     else:
         # use Kelly chat gpt
-        ret_bullet = random.choice(all_bullets)
+        if position is None:
+            ret_bullet = custom_llm.generate_project_bullets(company)
+        else:
+            ret_bullet = custom_llm.generate_exp_bullets(company, position)
     return ret_bullet
 
 

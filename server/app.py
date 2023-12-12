@@ -63,55 +63,8 @@ def generateStudent():
             'end': end,
             'courses': courses.getCourses(year),
           },
-          'experience': gen_experience.get_work(year, useCustomModel), #[
-          #   {
-          #     'company': "Google",
-          #     'location': "Mountain View, CA",
-          #     'position': "Software Engineering Intern",
-          #     'start': "June 2021",
-          #     'end': "September 2021",
-          #     'description': [
-          #       "Worked on the Google Search team",
-          #       "Implemented a new feature for Google Search",
-          #       "Used React, TypeScript, and Go",
-          #     ],
-          #   },
-          #   {
-          #     'company': "Facebook",
-          #     'location': "Menlo Park, CA",
-          #     'position': "Software Engineering Intern",
-          #     'start': "June 2020",
-          #     'end': "September 2020",
-          #     'description': [
-          #       "Worked on the Facebook Search team",
-          #       "Implemented a new feature for Facebook Search",
-          #       "Used React, TypeScript, and Go",
-          #     ],
-          #   },
-          # ],
-          'projects': gen_experience.get_projects(year, useCustomModel), #[
-          #   {
-          #     'name': "Artificial CSC Student",
-          #     'role': "Creator",
-          #     'start': "September 2021",
-          #     'end': "Present",
-          #     'description': ["Created an artificial CSC student", "Used Python"],
-          #   },
-          #   {
-          #     'name': "Artificial CSC Student",
-          #     'role': "Creator",
-          #     'start': "September 2021",
-          #     'end': "Present",
-          #     'description': ["Created an artificial CSC student", "Used Python", "Used React"],
-          #   },
-          #   {
-          #     'name': "Artificial CSC Student",
-          #     'role': "Creator",
-          #     'start': "September 2021",
-          #     'end': "Present",
-          #     'description': ["Created an artificial CSC student", "Used Python", "Used React", "Used Go"],
-          #   },
-          # ],
+          'experience': gen_experience.get_work(year, useCustomModel), 
+          'projects': gen_experience.get_projects(year, useCustomModel),
           'skills': skills
         }
       }

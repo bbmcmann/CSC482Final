@@ -1,13 +1,15 @@
-import pandas as pd
-import numpy as np
-import re
 import os
+import re
 
-from transformers import TextDataset, DataCollatorForLanguageModeling
-from transformers import GPT2Tokenizer, GPT2LMHeadModel
-from transformers import Trainer, TrainingArguments
-from transformers import PreTrainedTokenizerFast, GPT2LMHeadModel, GPT2TokenizerFast
-from transformers import BertTokenizerFast
+import numpy as np
+import pandas as pd
+from transformers import (BertTokenizerFast, DataCollatorForLanguageModeling,
+                          GPT2LMHeadModel, GPT2Tokenizer, GPT2TokenizerFast,
+                          PreTrainedTokenizerFast, TextDataset, Trainer,
+                          TrainingArguments)
+
+train_filename = '../data/train_85_epochs.txt'
+
 
 def load_dataset(file_path, tokenizer, block_size = 128):
     dataset = TextDataset(
@@ -79,26 +81,37 @@ def generate_text(model_path, sequence, max_length):
         top_k=50,
         top_p=0.95,
     )
-    generated_text = set((tokenizer.decode(final_outputs[0], skip_special_tokens=True).split("\n")))
-    clean_generated_text(generated_text)
+    generated_text = set((tokenizer.decode(final_outputs[0], skip_special_tokens=True).split("\n"))[1:])
+    return clean_generated_text(generated_text)
 
 def clean_generated_text(generated_text):
+    sentences = []
     for sent in generated_text:
         if not sent.endswith('.'):
             sent += "."
         if len(sent) > 50:
-            print(sent)
+            sentences.append(sent)
+    return sentences
 
 def inference(train_filename):
     sequence1 = "Create a project description with bullet points"
     max_len = 75
-    generate_text(train_filename, sequence1, max_len) 
+    return generate_text(train_filename, sequence1, max_len)
+
+def generate_exp_bullets(company, position):
+    prompt = f"Create resume bullet points for {company} as a {position}."
+    return generate_text(train_filename, prompt, 75)
+
+
+def generate_project_bullets(project):
+    prompt = f"Create resume bullet points for a {project} project."
+    return generate_text(train_filename, prompt, 75)
+
 
 def main():
     #Train
-    train_filename = '/Users/kellybecker/Desktop/NLP/CSC482Final/data/train_85_epochs.txt'
 
-    # train_file_path = "/Users/kellybecker/Desktop/NLP/CSC482Final/data/bulletpoints.txt"
+    # train_file_path = "../data/bulletpoints.txt"
     # model_name = 'gpt2'
     # overwrite_output_dir = False
     # per_device_train_batch_size = 8
@@ -113,7 +126,9 @@ def main():
     #     num_train_epochs=num_train_epochs,
     #     save_steps=save_steps
     # )
-    inference(train_filename)
+    # inference(train_filename)
+    print(generate_exp_bullets("Amazon", "Jr. Software Engineer"))
+    print(generate_project_bullets("Hackathon"))
 
 if __name__ == "__main__":
     main()
