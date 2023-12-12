@@ -68,8 +68,6 @@ export const getVariantStd = (year: number, numEntries: number) => {
   // decide line height based on number of entries to fill page
   let lineHeight = 1;
   if (numEntries < 3) {
-    lineHeight = 1.5;
-  } else if (numEntries == 3 && year > 2) {
     lineHeight = 1.25;
   }
 
@@ -97,6 +95,7 @@ export const getVariantStd = (year: number, numEntries: number) => {
     },
     headerline: {
       flexDirection: "row",
+      marginTop: 5,
     },
     contact: {
       fontSize: fonts.sizes.text,
